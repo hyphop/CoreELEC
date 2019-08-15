@@ -1,0 +1,2519 @@
+diff --git a/addons/screensaver.xbmc.builtin.black/addon.xml b/addons/screensaver.xbmc.builtin.black/addon.xml
+index ed951a71e5..8d8373c3af 100644
+--- a/addons/screensaver.xbmc.builtin.black/addon.xml
++++ b/addons/screensaver.xbmc.builtin.black/addon.xml
+@@ -1,14 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <addon id="screensaver.xbmc.builtin.black"
+        name="Black"
+-       version="1.0.32"
++       version="1.0.33"
+        provider-name="Team Kodi">
+   <extension point="xbmc.ui.screensaver" library=""/>
+   <extension point="xbmc.addon.metadata">
+     <summary lang="af_ZA">Sluimerskerm wat jou skerm swart maak.</summary>
+     <summary lang="am_ET">መመልከቻ ማዳኛ የእርስዎን መመልከቻ ጥቁር ያደርገዋል </summary>
+     <summary lang="ar_SA">شاشة التوقف التي تحول شاشتك لأسود</summary>
+-    <summary lang="be_BY">Ахоўнік экрану што робіць экран чорным</summary>
++    <summary lang="be_BY">Ахоўнік экрана, што робіць экран чорным</summary>
+     <summary lang="bg_BG">Скрийнсейвър, който прави екрана черен</summary>
+     <summary lang="ca_ES">Estalvi de pantalla que posa la pantalla en negre</summary>
+     <summary lang="cs_CZ">Spořič obrazovky, který začerní vaši obrazovku</summary>
+@@ -66,7 +66,7 @@
+     <description lang="af_ZA">Die is 'n eenvoudige sluimerskerm wat jou skerm swart maak.</description>
+     <description lang="am_ET">ጥቁር ቀላል መመልከቻ ማዳኛ የእርስዎን መመልከቻ ጥቁር ያደርገዋል </description>
+     <description lang="ar_SA">بلاك شاشة توقف بسيطة تحول شاشتك لأسود</description>
+-    <description lang="be_BY">Black - просты ахоўнік экрану, які робіць ваш экран чорным.</description>
++    <description lang="be_BY">Black - просты ахоўнік экрана, які робіць ваш экран чорным.</description>
+     <description lang="bg_BG">"Black" е просто скрийнсейвър, който ще направи екрана Ви черен.</description>
+     <description lang="ca_ES">Black és un estalvi de pantalla simple que posarà la teva pantalla en negre.</description>
+     <description lang="cs_CZ">Black je jednoduchý spořič obrazovky, který začerní vaši obrazovku.</description>
+diff --git a/addons/screensaver.xbmc.builtin.dim/addon.xml b/addons/screensaver.xbmc.builtin.dim/addon.xml
+index d9fe37c57a..c6e5506d12 100644
+--- a/addons/screensaver.xbmc.builtin.dim/addon.xml
++++ b/addons/screensaver.xbmc.builtin.dim/addon.xml
+@@ -1,14 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <addon id="screensaver.xbmc.builtin.dim"
+        name="Dim"
+-       version="1.0.55"
++       version="1.0.56"
+        provider-name="Team Kodi">
+   <extension point="xbmc.ui.screensaver" library=""/>
+   <extension point="xbmc.addon.metadata">
+     <summary lang="af_ZA">Sluimerskerm wat jou skerm verdof</summary>
+     <summary lang="am_ET">መመልከቻ ማዳኛ የ እርስዎን መመልከቻ ፈዘዝ ያደርገዋል </summary>
+     <summary lang="ar_SA">شاشة توقف تمكن من تظليم الشاشة</summary>
+-    <summary lang="be_BY">Ахоўнік экрану што зацямняе экран</summary>
++    <summary lang="be_BY">Ахоўнік экрана, што паступова зацямняе ваш экран</summary>
+     <summary lang="bg_BG">Скрийнсейвър, който затъмнява екрана</summary>
+     <summary lang="ca_ES">Estalvi de pantalla que enfosqueix la pantalla</summary>
+     <summary lang="cs_CZ">Spořič obrazovky, který ztmaví vaši obrazovku</summary>
+@@ -68,7 +68,7 @@
+     <description lang="af_ZA">Die Verdof sluimerskerm is 'n eenvoudige sluimerskerm wat jou skerm verdof (uit vaag) tot 'n stelbare waarde tussen 20 en 100%</description>
+     <description lang="am_ET">የ መመልከቻ ማዳኛ ማደብዘዣ የ እርስዎን መመልከቻ ያፈዘዋል (ማፍዘዣ) የ እርስዎን መመልከቻ ዋጋ በ 20 እና በ 100% መካከል</description>
+     <description lang="ar_SA">Dim عبارة عن شاشة توقف  تمكن من  تظليم (صورة خافتة) الشاشة إلى قيمة قابلة للتحديد بين 20 و 100%</description>
+-    <description lang="be_BY">Dim - просты ахоўнік экрану , які будзе зацямняць экран. Значэнне зацямнення можа змяняцца ад 20 да 100%.</description>
++    <description lang="be_BY">Dim - просты ахоўнік экрана, які будзе паступова зацямняць экран. Значэнне зацямнення можа змяняцца ад 20 да 100%.</description>
+     <description lang="bg_BG">Скрийнсейвърът "Dim" затъмнява екрана, до стойност, която Вие определяте предварително (между 20 и 100%).</description>
+     <description lang="ca_ES">L'estalvi de pantalla Dim és un estalvi de pantalla simple que enfosquirà (fos en negre) la seva pantalla a un valor que es pot configurar entre 20 i 100%.</description>
+     <description lang="cs_CZ">Spořič obrazovky Dim je jednoduchý spořič obrazovky, který ztmaví (posupně) vaši obrazovku podle nastavitelné hodnoty mezi 20 a 100 %.</description>
+diff --git a/addons/skin.estouchy/addon.xml b/addons/skin.estouchy/addon.xml
+index 2070f7e883..7c00ab3e21 100644
+--- a/addons/skin.estouchy/addon.xml
++++ b/addons/skin.estouchy/addon.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<addon id="skin.estouchy" version="2.0.24" name="Estouchy" provider-name="Team Kodi">
++<addon id="skin.estouchy" version="2.0.25" name="Estouchy" provider-name="Team Kodi">
+ 	<requires>
+ 		<import addon="xbmc.gui" version="5.14.0"/>
+ 	</requires>
+@@ -33,6 +33,7 @@
+ 		<summary lang="hu_HU">Felület érintőképernyős eszközöknek</summary>
+ 		<summary lang="is_IS">Skinn fyrir tæki með snertiskjá</summary>
+ 		<summary lang="it_IT">Skin per dispositivi touchscreen</summary>
++		<summary lang="ja_JP">スキンはタッチスクリーンデバイス向けです</summary>
+ 		<summary lang="ko_KR">터치 스크린 기기를 위한 스킨</summary>
+ 		<summary lang="lt_LT">Teminė išvaizda liečiamiesiems įrenginiams</summary>
+ 		<summary lang="lv_LV">Apvalks skārienekrāna ierīcēm</summary>
+@@ -77,6 +78,7 @@
+ 		<description lang="hu_HU">Egy érintőképernyős eszközökre, például táblagépekre és okostelefonokra tervezett felület</description>
+ 		<description lang="is_IS">Skinn sem er hannað til notkunar á tækjum með snertiskjá, eins og til dæmis spjaldtölvum og snjallsímum.</description>
+ 		<description lang="it_IT">Skin progettata per essere usata su dispositivi touchscreen come tablet e smartphone</description>
++		<description lang="ja_JP">スキンのデザインは、タッチスクリーンデバイスであるタブレットやスマホなどでの使用を想定されています</description>
+ 		<description lang="ko_KR">태블릿이나 스마트폰과 같은 터치 스크린 기기에서 사용할 수 있게 디자인한 스킨</description>
+ 		<description lang="lt_LT">Teminė išvaizda pritaikyta naudojimui įrenginiuose su liečiamaisiais ekranais, tokiuose kaip planšetiniai kompiuteriai ar išmanieji telefonai</description>
+ 		<description lang="ms_MY">Kulit direka untuk digunakan pada peranti berskrin sentuh seperti tablet dan telefon pintar</description>
+diff --git a/addons/skin.estouchy/language/resource.language.af_za/strings.po b/addons/skin.estouchy/language/resource.language.af_za/strings.po
+index 14d2b70158..900f6d923c 100644
+--- a/addons/skin.estouchy/language/resource.language.af_za/strings.po
++++ b/addons/skin.estouchy/language/resource.language.af_za/strings.po
+@@ -56,6 +56,10 @@ msgctxt "#31014"
+ msgid "Episodes"
+ msgstr "Episodes"
+ 
++msgctxt "#31015"
++msgid "Player info"
++msgstr "Speler info"
++
+ msgctxt "#31016"
+ msgid "Albums"
+ msgstr "Albums"
+diff --git a/addons/skin.estouchy/language/resource.language.be_by/strings.po b/addons/skin.estouchy/language/resource.language.be_by/strings.po
+index 79e43f0e65..83b3b23592 100644
+--- a/addons/skin.estouchy/language/resource.language.be_by/strings.po
++++ b/addons/skin.estouchy/language/resource.language.be_by/strings.po
+@@ -64,6 +64,10 @@ msgctxt "#31017"
+ msgid "PVR info"
+ msgstr "Звесткі PVR"
+ 
++msgctxt "#31018"
++msgid "Player process info"
++msgstr "Інфармацыя пра прайгравальнік"
++
+ msgctxt "#31024"
+ msgid "Page"
+ msgstr "Page"
+@@ -118,7 +122,7 @@ msgstr "System music files"
+ 
+ msgctxt "#31059"
+ msgid "Current playlist"
+-msgstr "Current playlist"
++msgstr "Бягучы спіс прайгравання"
+ 
+ msgctxt "#31200"
+ msgid "Back"
+@@ -130,7 +134,7 @@ msgstr "Location"
+ 
+ msgctxt "#31202"
+ msgid "View"
+-msgstr "View"
++msgstr "Выгляд"
+ 
+ msgctxt "#31300"
+ msgid "Current Temp"
+@@ -160,9 +164,13 @@ msgctxt "#31356"
+ msgid "Download Subtitles"
+ msgstr "Download Subtitles"
+ 
++msgctxt "#31358"
++msgid "Teletext"
++msgstr "Тэлетэкст"
++
+ msgctxt "#31390"
+ msgid "Skin default"
+-msgstr "Skin default"
++msgstr "Прадвызначаная абалонка"
+ 
+ msgctxt "#31391"
+ msgid "Arial based"
+@@ -178,7 +186,7 @@ msgstr "Select your Kodi user Profile[CR]to login and continue"
+ 
+ msgctxt "#31550"
+ msgid "Backgrounds"
+-msgstr "Backgrounds"
++msgstr "Фоны"
+ 
+ msgctxt "#31551"
+ msgid "Add-on Shortcut"
+diff --git a/addons/skin.estouchy/language/resource.language.en_us/strings.po b/addons/skin.estouchy/language/resource.language.en_us/strings.po
+index 9c997316ca..529b1b92f0 100644
+--- a/addons/skin.estouchy/language/resource.language.en_us/strings.po
++++ b/addons/skin.estouchy/language/resource.language.en_us/strings.po
+@@ -56,6 +56,10 @@ msgctxt "#31014"
+ msgid "Episodes"
+ msgstr "Episodes"
+ 
++msgctxt "#31015"
++msgid "Player info"
++msgstr "Player info"
++
+ msgctxt "#31016"
+ msgid "Albums"
+ msgstr "Albums"
+diff --git a/addons/skin.estouchy/language/resource.language.ja_jp/strings.po b/addons/skin.estouchy/language/resource.language.ja_jp/strings.po
+index f57281e622..327b58c5c4 100644
+--- a/addons/skin.estouchy/language/resource.language.ja_jp/strings.po
++++ b/addons/skin.estouchy/language/resource.language.ja_jp/strings.po
+@@ -30,11 +30,11 @@ msgstr "Caps[CR]Lock"
+ 
+ msgctxt "#31005"
+ msgid "Visualization Options"
+-msgstr "ビジュアライザーオプション"
++msgstr "ビジュアライザオプション"
+ 
+ msgctxt "#31006"
+ msgid "Visualization Presets"
+-msgstr "ビジュアライザーのプリセット"
++msgstr "ビジュアライザプリセット"
+ 
+ msgctxt "#31007"
+ msgid "Context Menu"
+@@ -44,6 +44,10 @@ msgctxt "#31009"
+ msgid "Working..."
+ msgstr "処理中..."
+ 
++msgctxt "#31011"
++msgid "Recent"
++msgstr "最近"
++
+ msgctxt "#31013"
+ msgid "Movies"
+ msgstr "映画"
+@@ -52,10 +56,34 @@ msgctxt "#31014"
+ msgid "Episodes"
+ msgstr "エピソード"
+ 
++msgctxt "#31015"
++msgid "Player info"
++msgstr "プレイヤー詳細"
++
+ msgctxt "#31016"
+ msgid "Albums"
+ msgstr "アルバム"
+ 
++msgctxt "#31017"
++msgid "PVR info"
++msgstr "PVR詳細"
++
++msgctxt "#31018"
++msgid "Player process info"
++msgstr "プレイヤーのプロセス詳細"
++
++msgctxt "#31019"
++msgid "Video decoder"
++msgstr "ビデオデコーダー"
++
++msgctxt "#31020"
++msgid "Pixel format"
++msgstr "ピクセルの形式"
++
++msgctxt "#31021"
++msgid "System memory usage"
++msgstr "システムメモリ使用量"
++
+ msgctxt "#31024"
+ msgid "Page"
+ msgstr "ページ"
+@@ -68,6 +96,10 @@ msgctxt "#31038"
+ msgid "Login"
+ msgstr "ログイン"
+ 
++msgctxt "#31039"
++msgid "Updated:"
++msgstr "更新:"
++
+ msgctxt "#31043"
+ msgid "PAUSED"
+ msgstr "静止中"
+@@ -80,17 +112,21 @@ msgctxt "#31045"
+ msgid "REWIND"
+ msgstr "巻戻し"
+ 
++msgctxt "#31046"
++msgid "Play speed"
++msgstr "再生速度"
++
+ msgctxt "#31049"
+ msgid "End Time"
+ msgstr "終了時間"
+ 
+ msgctxt "#31050"
+ msgid "Sort: Ascending"
+-msgstr "ソート: 昇順"
++msgstr "並べ替え: 昇順"
+ 
+ msgctxt "#31051"
+ msgid "Sort: Descending"
+-msgstr "ソート: 降順"
++msgstr "並べ替え: 降順"
+ 
+ msgctxt "#31055"
+ msgid "Open playlist"
+@@ -98,7 +134,7 @@ msgstr "プレイリストを開く"
+ 
+ msgctxt "#31056"
+ msgid "Save playlist"
+-msgstr "プレイリストを保存"
++msgstr "プレイリスト保存"
+ 
+ msgctxt "#31057"
+ msgid "Close playlist"
+@@ -106,7 +142,7 @@ msgstr "プレイリストを閉じる"
+ 
+ msgctxt "#31058"
+ msgid "System music files"
+-msgstr "システム音楽ファイル"
++msgstr "システムミュージックファイル"
+ 
+ msgctxt "#31059"
+ msgid "Current playlist"
+@@ -118,7 +154,7 @@ msgstr "戻る"
+ 
+ msgctxt "#31201"
+ msgid "Location"
+-msgstr "地域"
++msgstr "場所"
+ 
+ msgctxt "#31202"
+ msgid "View"
+@@ -134,7 +170,11 @@ msgstr "最終更新時刻"
+ 
+ msgctxt "#31303"
+ msgid "Data provider"
+-msgstr "気象データ提供元"
++msgstr "気象データプロバイダー"
++
++msgctxt "#31309"
++msgid "System Memory Used:"
++msgstr "システムメモリ使用量:"
+ 
+ msgctxt "#31320"
+ msgid "Last Logged In"
+@@ -150,7 +190,7 @@ msgstr "ビデオメニュー"
+ 
+ msgctxt "#31356"
+ msgid "Download Subtitles"
+-msgstr "字幕をダウンロード"
++msgstr "字幕ダウンロード"
+ 
+ msgctxt "#31358"
+ msgid "Teletext"
+@@ -158,19 +198,59 @@ msgstr "文字多重放送"
+ 
+ msgctxt "#31390"
+ msgid "Skin default"
+-msgstr "スキンのデフォルト"
++msgstr "スキンデフォルト"
+ 
+ msgctxt "#31391"
+ msgid "Arial based"
+-msgstr "Arial ベース"
++msgstr "Arialベース"
+ 
+ msgctxt "#31400"
+ msgid "Change the skin · Set language and region · Change file listing options · Set up a screensaver"
+ msgstr "スキン変更 · 言語と地域の設定 · ファイルリストオプション · スクリーンセーバー設定"
+ 
++msgctxt "#31405"
++msgid "Configure & manage media sharing services · Configure & manage the weather service"
++msgstr "設定 & メディア共有サービス · 設定 & 天気予報サービス"
++
++msgctxt "#31406"
++msgid "Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
++msgstr "設定の表示 · オーディオの設定 · インターネット アクセスの設定 · 省電力の設定· ログの設定"
++
++msgctxt "#31407"
++msgid "Manage your installed add-ons · Browse for and install add-ons from kodi.tv · Modify add-on settings"
++msgstr "インストールしたアドオンの管理 · kodi.tvからインストールしたアドオンの閲覧 · アドオンの変更と設定"
++
++msgctxt "#31408"
++msgid "Configure actions that can be used during playback · Configure how media content is played"
++msgstr "再生中に使用できるアクションを設定する · メディアコンテンツの再生方法を設定"
++
++msgctxt "#31409"
++msgid "Configure library sources · Show the media lists display content · Configure how library lists are navigated"
++msgstr "ライブラリソースの設定 · メディアリストの表示内容の表示 · ライブラリリストの移動方法の設定"
++
++msgctxt "#31410"
++msgid "Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
++msgstr "設定 スキン · 設定 地域 · 設定 コントロール · 設定 スクリーンセーバー · 設定 マスターロック"
++
++msgctxt "#31411"
++msgid "Configure your profiles · Set locking options · Enable login screen"
++msgstr "設定 あなたのプロファイル · セット ロックオプション · 有効 ログインスクリーン"
++
++msgctxt "#31412"
++msgid "Display system information · Hardware statistics · Check storage availability · View network configuration"
++msgstr "システム情報を表示 · ハードウェアの使用量 · ストレージの利用可能量 · ネットワークの設定を表示"
++
+ msgctxt "#31421"
+ msgid "Select your Kodi user Profile[CR]to login and continue"
+-msgstr "Kodi ユーザープロファイルを選択して[CR]ログインしてください"
++msgstr "Kodiユーザープロファイルを選択して[CR]ログインしてください"
++
++msgctxt "#31548"
++msgid "Home menu"
++msgstr "ホームメニュー"
++
++msgctxt "#31549"
++msgid "Home Add-ons"
++msgstr "ホームアドオン"
+ 
+ msgctxt "#31550"
+ msgid "Backgrounds"
+@@ -180,22 +260,78 @@ msgctxt "#31551"
+ msgid "Add-on Shortcut"
+ msgstr "アドオンショートカット"
+ 
++msgctxt "#31552"
++msgid "SYNC"
++msgstr "同期"
++
++msgctxt "#31553"
++msgid "Use Custom Background"
++msgstr "カスタムバックグラウンドを使用"
++
++msgctxt "#31554"
++msgid "Background:"
++msgstr "背景:"
++
++msgctxt "#31555"
++msgid "Configure TV settings · Change full screen info · Manage EPG data settings"
++msgstr "設定 TV設定 · 変更 全画面時の詳細 · 管理 EPG データ設定"
++
+ msgctxt "#31556"
+ msgid "Live TV"
+ msgstr "ライブTV"
+ 
++msgctxt "#31557"
++msgid "Hide video background"
++msgstr "背景のビデオを隠す"
++
++msgctxt "#31558"
++msgid "Hide visualization background"
++msgstr "背景のビジュアライザを隠す"
++
++msgctxt "#31559"
++msgid "Channel settings"
++msgstr "チャンネルの設定"
++
+ msgctxt "#31560"
+ msgid "Available groups"
+ msgstr "利用可能なグループ"
+ 
+ msgctxt "#31561"
+ msgid "Add Group"
+-msgstr "グループの追加"
++msgstr "グループ追加"
+ 
+ msgctxt "#31562"
+ msgid "Rename Group"
+-msgstr "グループの名称変更"
++msgstr "グループ名称変更"
+ 
+ msgctxt "#31563"
+ msgid "Delete Group"
+-msgstr "グループの削除"
++msgstr "グループ削除"
++
++msgctxt "#31564"
++msgid "Show hidden"
++msgstr "表示しない"
++
++msgctxt "#31565"
++msgid "Show deleted"
++msgstr "表示を削除しました"
++
++msgctxt "#31900"
++msgid "First Run"
++msgstr "初回起動時"
++
++msgctxt "#31901"
++msgid "There are two things to know about navigating Estouchy"
++msgstr "Estouchyの操作で2つ知っておくべきことがあります"
++
++msgctxt "#31902"
++msgid "The Kodi logo functions as a 'HOME' button. Whenever you touch it, you will be taken back to the home screen."
++msgstr "Kodiのロゴは 'ホーム' ボタンになっています。どんなときでもタッチすればホーム画面に戻ってこられます。"
++
++msgctxt "#31903"
++msgid "When you are playing audio or video, the item title will appear at the top of the screen. Touching it will take you to the fullscreen visualization or video window."
++msgstr "オーディオかビデオの再生中、トップ画面にアイテムのタイトルを表示します。タッチして全画面でビジュアライザやビオデ画面も。"
++
++msgctxt "#31904"
++msgid "Now Playing Title..."
++msgstr "現在再生中のタイトル..."
+diff --git a/addons/skin.estouchy/language/resource.language.pt_br/strings.po b/addons/skin.estouchy/language/resource.language.pt_br/strings.po
+index 49e1a3e5fb..774da5e295 100644
+--- a/addons/skin.estouchy/language/resource.language.pt_br/strings.po
++++ b/addons/skin.estouchy/language/resource.language.pt_br/strings.po
+@@ -56,6 +56,10 @@ msgctxt "#31014"
+ msgid "Episodes"
+ msgstr "Episódios"
+ 
++msgctxt "#31015"
++msgid "Player info"
++msgstr "Info do reprodutor"
++
+ msgctxt "#31016"
+ msgid "Albums"
+ msgstr "Álbuns"
+diff --git a/addons/skin.estouchy/language/resource.language.pt_pt/strings.po b/addons/skin.estouchy/language/resource.language.pt_pt/strings.po
+index d3fcbc2f80..870fba81cb 100644
+--- a/addons/skin.estouchy/language/resource.language.pt_pt/strings.po
++++ b/addons/skin.estouchy/language/resource.language.pt_pt/strings.po
+@@ -56,6 +56,10 @@ msgctxt "#31014"
+ msgid "Episodes"
+ msgstr "Episódios"
+ 
++msgctxt "#31015"
++msgid "Player info"
++msgstr "Informação do leitor"
++
+ msgctxt "#31016"
+ msgid "Albums"
+ msgstr "Álbuns"
+diff --git a/addons/skin.estuary/addon.xml b/addons/skin.estuary/addon.xml
+index d2ba63a8aa..5e9de1b5b8 100644
+--- a/addons/skin.estuary/addon.xml
++++ b/addons/skin.estuary/addon.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<addon id="skin.estuary" version="2.0.23" name="Estuary" provider-name="phil65, Ichabod Fletchman">
++<addon id="skin.estuary" version="2.0.24" name="Estuary" provider-name="phil65, Ichabod Fletchman">
+ 	<requires>
+ 		<import addon="xbmc.gui" version="5.14.0"/>
+ 	</requires>
+@@ -38,7 +38,7 @@
+ 		<summary lang="hu_HU">Estuary felszín. Készítette phil65 és Piers. (Kodi alapértelmezett felszín)</summary>
+ 		<summary lang="is_IS">Estuary-skinnið eftir phil65. (sjálfgefið útlit Kodi)</summary>
+ 		<summary lang="it_IT">Skin Estuary da phil65 e Piers. (Skin predefinita di Kodi)</summary>
+-		<summary lang="ja_JP">Estuary スキン by phil65 and Piers (Kodi デフォルトスキン)</summary>
++		<summary lang="ja_JP">Estuaryスキン by phil65 and Piers (Kodi デフォルトスキン)</summary>
+ 		<summary lang="ko_KR">phil65가 만든 Estuary 스킨. (Kodi 기본 스킨)</summary>
+ 		<summary lang="lt_LT">Estuary teminė išvaizda, kurią sukūrė phil65 ir Piers. (Numatytoji Kodi teminė išvaizda)</summary>
+ 		<summary lang="lv_LV">Estuary apvalks no phil65. (Kodi noklusējuma apvalks)</summary>
+@@ -84,7 +84,7 @@
+ 		<description lang="hu_HU">Az Estuary az alapértelmezett felszín a 17.0 és újabb Kodi kiadásokban.  Megpróbál könnyen kezelhető és használható lenni, az újonc Kodi felhasználóknak is.</description>
+ 		<description lang="is_IS">Estuary er sjálfgefið skinn fyrir Kodi 17.0 og nýrri. Með því á að vera auðvelt fyrir fyrsta-skiptis Kodi-notendur að skilja og nota viðmótið.</description>
+ 		<description lang="it_IT">Estuary è la skin predefinita di Kodi 17.0 e successivi. Cerca di essere facile da capire e usare per i nuovi utenti di Kodi.</description>
+-		<description lang="ja_JP">Estuary は Kodi 17.0 およびそれ以上のバージョンで標準のスキンです。ユーザが初めて Kodi に触れる際にわかりやすく使えるようにしてあります。</description>
++		<description lang="ja_JP">EstuaryはKodi 17.0およびそれ以上のバージョンで標準のスキンです。ユーザーが初めてKodiに触れる際にわかりやすく使えるようにしてあります。</description>
+ 		<description lang="ko_KR">Estuary는 Kodi 17.0이상의 기본 스킨입니다. 처음 Kodi를 접하는 사용자가 쉽게 이해하고 사용할 수 있도록 만들었습니다.</description>
+ 		<description lang="lt_LT">Estuary yra numatytoji Kodi 17.0 ir aukštesnių versijų teminė išvaizda. Jos tikslas yra būti lengvai perprantama naujiems Kodi vartotojams.</description>
+ 		<description lang="ms_MY">Estuary ialah kulit lalai untuk Kodi 17.0 dan ke atas. Kulit yang mudah digunakan buat pengguna Kodi kali pertama untuk memahami dan menggunakannya.</description>
+@@ -129,7 +129,7 @@
+ 		<disclaimer lang="hu_HU">Az Estuary az alapértelmezett Kodi felszín. Eltávolítása problémákat okozhat.</disclaimer>
+ 		<disclaimer lang="is_IS">Estuary er sjálfgefið skinn fyrir Kodi, ef það er fjarlægt gætu komið upp ýmis vandamál</disclaimer>
+ 		<disclaimer lang="it_IT">Estuary è la skin predefinita di Kodi, rimuoverla potrebbe causare problemi</disclaimer>
+-		<disclaimer lang="ja_JP">Estuary は Kodi のデフォルトスキンですので、これを削除するとうまく動かなくなる可能性があります</disclaimer>
++		<disclaimer lang="ja_JP">EstuaryはKodiのデフォルトスキンなので、これを削除するとうまく動かなくなる可能性があります</disclaimer>
+ 		<disclaimer lang="ko_KR">Estuary는 Kodi의 기본스킨으로 제거시 문제가 생길 수 있습니다.</disclaimer>
+ 		<disclaimer lang="lt_LT">Estuary yra numatytoji Kodi teminė išvaizda, jos pašalinimas gali sukelti problemų</disclaimer>
+ 		<disclaimer lang="ms_MY">Estuary ialah kulit lalai Kodi, mengubahnya boleh menimbulkan isu.</disclaimer>
+diff --git a/addons/skin.estuary/language/resource.language.be_by/strings.po b/addons/skin.estuary/language/resource.language.be_by/strings.po
+index 1c2f417bf8..c94cef00a1 100644
+--- a/addons/skin.estuary/language/resource.language.be_by/strings.po
++++ b/addons/skin.estuary/language/resource.language.be_by/strings.po
+@@ -18,7 +18,7 @@ msgstr ""
+ 
+ msgctxt "#31001"
+ msgid "Search..."
+-msgstr "Search..."
++msgstr "Пошук..."
+ 
+ msgctxt "#31019"
+ msgid "Forecast"
+@@ -36,6 +36,10 @@ msgctxt "#31053"
+ msgid "Arial based"
+ msgstr "Падобны на Arial"
+ 
++msgctxt "#31066"
++msgid "Music playlist"
++msgstr "Музычны спіс прайгравання"
++
+ msgctxt "#31067"
+ msgid "Event log"
+ msgstr "Журнал падзей"
+@@ -56,10 +60,26 @@ msgctxt "#31100"
+ msgid "Shift"
+ msgstr "Shift"
+ 
++msgctxt "#31106"
++msgid "Teletext"
++msgstr "Тэлетэкст"
++
++msgctxt "#31132"
++msgid "Select Program"
++msgstr "Абраць праграму"
++
++msgctxt "#31133"
++msgid "Select Resolution"
++msgstr "Абраць раздзяляльную здольнасць"
++
+ msgctxt "#31137"
+ msgid "PVR info"
+ msgstr "Звесткі PVR"
+ 
++msgctxt "#31138"
++msgid "Player process info"
++msgstr "Інфармацыя пра прайгравальнік"
++
+ msgctxt "#31165"
+ msgid "Profile name"
+-msgstr "Profile name"
++msgstr "Назва профіля"
+diff --git a/addons/skin.estuary/language/resource.language.cs_cz/strings.po b/addons/skin.estuary/language/resource.language.cs_cz/strings.po
+index 607cb16ed4..b1565b785e 100644
+--- a/addons/skin.estuary/language/resource.language.cs_cz/strings.po
++++ b/addons/skin.estuary/language/resource.language.cs_cz/strings.po
+@@ -526,7 +526,7 @@ msgstr "Stiskněte OK pro přepnutí mezi umístěními"
+ 
+ msgctxt "#31155"
+ msgid "No bookmarks created yet."
+-msgstr "Zatím nebyly vytvořeny žádné záložky"
++msgstr "Zatím nebyly vytvořeny žádné záložky."
+ 
+ msgctxt "#31156"
+ msgid "Choose background pattern"
+@@ -542,7 +542,7 @@ msgstr "Dotykový režim"
+ 
+ msgctxt "#31159"
+ msgid "Artwork"
+-msgstr "Umělecké dílo"
++msgstr "Obrázek"
+ 
+ msgctxt "#31160"
+ msgid "Show media flags"
+diff --git a/addons/skin.estuary/language/resource.language.ja_jp/strings.po b/addons/skin.estuary/language/resource.language.ja_jp/strings.po
+index 43f039159f..4875ffe25a 100644
+--- a/addons/skin.estuary/language/resource.language.ja_jp/strings.po
++++ b/addons/skin.estuary/language/resource.language.ja_jp/strings.po
+@@ -34,19 +34,23 @@ msgstr "シネマモード"
+ 
+ msgctxt "#31004"
+ msgid "Change mode"
+-msgstr "モードを変更"
++msgstr "モード変更"
+ 
+ msgctxt "#31005"
+ msgid "Watch as 2D"
+-msgstr "2D で観る"
++msgstr "2Dで観る"
+ 
+ msgctxt "#31006"
+ msgid "Random movies"
+-msgstr "ランダムの映画"
++msgstr "ランダムムービー"
+ 
+ msgctxt "#31007"
+ msgid "Unwatched movies"
+-msgstr "未視聴の映画"
++msgstr "未視聴な映画"
++
++msgctxt "#31008"
++msgid "Enable category widgets"
++msgstr "カテゴリーウィジェット有効"
+ 
+ msgctxt "#31009"
+ msgid "Download icons"
+@@ -54,7 +58,7 @@ msgstr "ダウンロードアイコン"
+ 
+ msgctxt "#31010"
+ msgid "In progress movies"
+-msgstr "進行中の映画"
++msgstr "進行中のムービー"
+ 
+ msgctxt "#31011"
+ msgid "Most played albums"
+@@ -70,7 +74,7 @@ msgstr "ランダムアーティスト"
+ 
+ msgctxt "#31014"
+ msgid "Unplayed albums"
+-msgstr "未再生アルバム"
++msgstr "再生していないアルバム"
+ 
+ msgctxt "#31015"
+ msgid "Recent recordings"
+@@ -108,10 +112,18 @@ msgctxt "#31023"
+ msgid "Viewtype"
+ msgstr "表示タイプ"
+ 
++msgctxt "#31024"
++msgid "Choose rating to display for media items"
++msgstr "メディアアイテムへ表示する評価を選択"
++
+ msgctxt "#31025"
+ msgid "No favourites found. You can add any item from media views to this list by using the context menu."
+ msgstr "お気に入りは見つかりませんでした。メディアビューでコンテキストメニューを使用してこのリストにアイテムを追加できます。"
+ 
++msgctxt "#31026"
++msgid "Timeshift"
++msgstr "タイムシフト"
++
+ msgctxt "#31028"
+ msgid "Show fanart"
+ msgstr "ファンアートを見る"
+@@ -120,6 +132,10 @@ msgctxt "#31029"
+ msgid "Last logged in"
+ msgstr "最終ログイン"
+ 
++msgctxt "#31030"
++msgid "System memory usage"
++msgstr "システムメモリ使用量"
++
+ msgctxt "#31031"
+ msgid "Version info"
+ msgstr "バージョン情報"
+@@ -154,7 +170,7 @@ msgstr "早送り"
+ 
+ msgctxt "#31041"
+ msgid "Camera manufacturer"
+-msgstr "カメラのメーカー"
++msgstr "カメラメーカー"
+ 
+ msgctxt "#31042"
+ msgid "Playlist options"
+@@ -166,7 +182,7 @@ msgstr "タイプとルールを指定してスマートプレイリストを作
+ 
+ msgctxt "#31044"
+ msgid "Add group"
+-msgstr "グループの追加"
++msgstr "グループ追加"
+ 
+ msgctxt "#31045"
+ msgid "Rename group"
+@@ -174,7 +190,7 @@ msgstr "グループの名称変更"
+ 
+ msgctxt "#31046"
+ msgid "Delete group"
+-msgstr "グループの削除"
++msgstr "グループ削除"
+ 
+ msgctxt "#31048"
+ msgid "Available"
+@@ -186,15 +202,15 @@ msgstr "[B]決定[/B]を押して停止"
+ 
+ msgctxt "#31052"
+ msgid "filtered"
+-msgstr "フィルタ済"
++msgstr "フィルター済み"
+ 
+ msgctxt "#31053"
+ msgid "Arial based"
+-msgstr "Arial ベース"
++msgstr "Arialベース"
+ 
+ msgctxt "#31054"
+ msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
+-msgstr "[B]左[/B]を押して早戻し、または[B]右[/B]で早送り"
++msgstr "[B]左[/B]を押して巻き戻し、または[B]右[/B]で早送り"
+ 
+ msgctxt "#31056"
+ msgid "Go to playlist"
+@@ -212,6 +228,10 @@ msgctxt "#31061"
+ msgid "Main menu items"
+ msgstr "メインメニューアイテム"
+ 
++msgctxt "#31062"
++msgid "Choose weather fanart pack"
++msgstr "天気のファンアートパック選択"
++
+ msgctxt "#31063"
+ msgid "Sections"
+ msgstr "セクション"
+@@ -230,7 +250,7 @@ msgstr "イベントログ"
+ 
+ msgctxt "#31068"
+ msgid "Choose presets"
+-msgstr "プリセットを選択"
++msgstr "プリセット選択"
+ 
+ msgctxt "#31069"
+ msgid "Last Updated"
+@@ -238,7 +258,7 @@ msgstr "最終更新時刻"
+ 
+ msgctxt "#31071"
+ msgid "by"
+-msgstr "by"
++msgstr "で"
+ 
+ msgctxt "#31072"
+ msgid "Power Options"
+@@ -266,7 +286,7 @@ msgstr "歌詞アドオン設定"
+ 
+ msgctxt "#31084"
+ msgid "Visualisation settings"
+-msgstr "ビジュアライザー設定"
++msgstr "ビジュアライザ設定"
+ 
+ msgctxt "#31089"
+ msgid "Available groups"
+@@ -286,11 +306,11 @@ msgstr "トップバーに天気予報を表示"
+ 
+ msgctxt "#31095"
+ msgid "Use slide animations"
+-msgstr "スライドアニメーションを使用"
++msgstr "スライドアニメーション使用"
+ 
+ msgctxt "#31096"
+ msgid "Local subtitle available"
+-msgstr "ローカルの字幕を利用できます"
++msgstr "ローカルの字幕が利用可能"
+ 
+ msgctxt "#31097"
+ msgid "Channel options"
+@@ -298,11 +318,15 @@ msgstr "チャンネルオプション"
+ 
+ msgctxt "#31098"
+ msgid "Select your Kodi user profile[CR]to login and continue"
+-msgstr "Kodi ユーザープロファイルを選択して[CR]ログインしてください"
++msgstr "Kodiユーザープロファイルを選択して[CR]ログインしてください"
++
++msgctxt "#31099"
++msgid "IconWall"
++msgstr "アイコン壁紙"
+ 
+ msgctxt "#31100"
+ msgid "Shift"
+-msgstr "Shift"
++msgstr "シフト"
+ 
+ msgctxt "#31101"
+ msgid "InfoWall"
+@@ -314,7 +338,7 @@ msgstr "ウォール"
+ 
+ msgctxt "#31103"
+ msgid "Enter text here..."
+-msgstr "テキストを入力..."
++msgstr "テキスト入力..."
+ 
+ msgctxt "#31104"
+ msgid "Your library is currently empty. In order to populate it with your personal media, enter \"Files\" section, add a media source and configure it. After the source has been added and indexed you will be able to browse your library."
+@@ -338,11 +362,11 @@ msgstr "ファイルセクションに入る"
+ 
+ msgctxt "#31111"
+ msgid "View your personal pictures or download one of the many image add-ons from the official repository."
+-msgstr "個人的な写真を表示またはオフィシャルリポジトリから画像アドオンをダウンロードする。"
++msgstr "個人的な写真を表示またはオフィシャルリポジトリから画像アドオンをダウンロード。"
+ 
+ msgctxt "#31112"
+ msgid "Toggle audio stream"
+-msgstr "オーディオストリーム切替"
++msgstr "オーディオストリームをトグル"
+ 
+ msgctxt "#31113"
+ msgid "Search local library"
+@@ -350,11 +374,11 @@ msgstr "ローカルライブラリ検索"
+ 
+ msgctxt "#31114"
+ msgid "Search YouTube"
+-msgstr "YouTubeを検索"
++msgstr "YouTube検索"
+ 
+ msgctxt "#31115"
+ msgid "Search TheMovieDB"
+-msgstr "TheMovieDBを検索"
++msgstr "TheMovieDB検索"
+ 
+ msgctxt "#31116"
+ msgid "Remove this main menu item"
+@@ -362,7 +386,7 @@ msgstr "メインメニューから消去"
+ 
+ msgctxt "#31117"
+ msgid "Edit nodes"
+-msgstr "ノードを編集"
++msgstr "ノード編集"
+ 
+ msgctxt "#31118"
+ msgid "Enter add-on browser"
+@@ -402,7 +426,7 @@ msgstr "決定を押してあらすじを読む"
+ 
+ msgctxt "#31127"
+ msgid "Show icons"
+-msgstr "アイコンを表示"
++msgstr "アイコン表示"
+ 
+ msgctxt "#31128"
+ msgid "Contributors"
+@@ -410,20 +434,144 @@ msgstr "協力者"
+ 
+ msgctxt "#31129"
+ msgid "General settings applying to all areas of the skin."
+-msgstr "このスキンのすべてのエリアに一般設定を適用する"
++msgstr "このスキンのすべての範囲に一般設定を適用する。"
+ 
+ msgctxt "#31130"
+ msgid "Main menu-related settings: Configure the home screen to your likings."
+-msgstr "メインメニュー関連設定: 好きなようにホームスクリーンを設定できます。"
++msgstr "メインメニュー関連設定: 好きなようにホーム画面を設定できます。"
++
++msgctxt "#31131"
++msgid "Choose skin fanart pack"
++msgstr "スキンのファンアートパック選択"
++
++msgctxt "#31132"
++msgid "Select Program"
++msgstr "プログラム選択"
++
++msgctxt "#31133"
++msgid "Select Resolution"
++msgstr "解像度選択"
+ 
+ msgctxt "#31134"
+ msgid "Remaining"
+ msgstr "残り"
+ 
++msgctxt "#31136"
++msgid "Click here to see latest changes..."
++msgstr "ここをクリックして最近の変更を見る..."
++
++msgctxt "#31137"
++msgid "PVR info"
++msgstr "PVR詳細"
++
++msgctxt "#31138"
++msgid "Player process info"
++msgstr "プレイヤーのプロセス詳細"
++
++msgctxt "#31139"
++msgid "Video decoder"
++msgstr "ビデオデコーダー"
++
++msgctxt "#31140"
++msgid "Pixel format"
++msgstr "ピクセル形式"
++
++msgctxt "#31141"
++msgid "Changes for version"
++msgstr "バージョン変更"
++
++msgctxt "#31142"
++msgid "Play speed"
++msgstr "再生速度"
++
++msgctxt "#31143"
++msgid "You did not set up PVR yet. In order to use PVR, choose a PVR client addon and configure it. Please visit http://kodi.wiki/view/PVR to learn more."
++msgstr "まだPVRを設定していません。PVRを使用するには、PVRクライアントアドオンを選択して設定します。詳細については、http://kodi.wiki/view/PVR をご覧ください。"
++
+ msgctxt "#31144"
+ msgid "Enter add-on browser"
+ msgstr "アドオンブラウザー"
+ 
++msgctxt "#31145"
++msgid "Search add-ons"
++msgstr "アドオン選択"
++
++msgctxt "#31148"
++msgid "Categories"
++msgstr "カテゴリー"
++
++msgctxt "#31149"
++msgid "Select genre fanart pack"
++msgstr "ジャンルのファンアートパック選択"
++
++msgctxt "#31150"
++msgid "Repository"
++msgstr "リポジトリ"
++
++msgctxt "#31151"
++msgid "Unwatched music videos"
++msgstr "未視聴なミュージックビデオ"
++
++msgctxt "#31152"
++msgid "Random music videos"
++msgstr "ランダムミュージックビデオ"
++
++msgctxt "#31153"
++msgid "You do not have any add-ons of this type installed. Enter the add-on browser to download add-ons created by our community."
++msgstr "この種類のアドオンはインストールされていません。アドオンブラウザを使用して、私たちのコミュニティによって作成されたアドオンをダウンロードしてください。"
++
++msgctxt "#31154"
++msgid "Press OK to switch between locations"
++msgstr "OKを押して場所を切り替える"
++
++msgctxt "#31155"
++msgid "No bookmarks created yet."
++msgstr "ブックマークをまだ作成していません。"
++
++msgctxt "#31156"
++msgid "Choose background pattern"
++msgstr "背景のパターン選択"
++
++msgctxt "#31157"
++msgid "Edit categories"
++msgstr "カテゴリー編集"
++
++msgctxt "#31158"
++msgid "Touch mode"
++msgstr "タッチモード"
++
++msgctxt "#31159"
++msgid "Artwork"
++msgstr "アートワーク"
++
++msgctxt "#31160"
++msgid "Show media flags"
++msgstr "メディアのフラグを表示"
++
++msgctxt "#31161"
++msgid "Numeric pad"
++msgstr "テンキー"
++
++msgctxt "#31162"
++msgid "Play your personal games or download one of the many game add-ons from the official repository."
++msgstr "ゲームで遊ぶ、[CR]もしくは公式レポジトリからたくさんあるゲームのアドオンをダウンロードしてみる。"
++
++msgctxt "#31163"
++msgid "Show Fanart background"
++msgstr "背景にファンアートを表示"
++
++msgctxt "#31164"
++msgid "Choose kind of profile identification"
++msgstr "プロファイルの確認と種類を選択"
++
+ msgctxt "#31165"
+ msgid "Profile name"
+ msgstr "プロファイル名"
++
++msgctxt "#31166"
++msgid "Profile avatar"
++msgstr "プロファイルアバター"
++
++msgctxt "#31167"
++msgid "Animate background"
++msgstr "アニメーション背景"
+diff --git a/addons/skin.estuary/language/resource.language.pt_br/strings.po b/addons/skin.estuary/language/resource.language.pt_br/strings.po
+index fdb5bf098c..fadbf70f0b 100644
+--- a/addons/skin.estuary/language/resource.language.pt_br/strings.po
++++ b/addons/skin.estuary/language/resource.language.pt_br/strings.po
+@@ -398,7 +398,7 @@ msgstr "Não tens nenhum addon instalado ainda. Visite as categoria de addons at
+ 
+ msgctxt "#31120"
+ msgid "You did not set up a weather provider yet. In order to view weather information, choose a weather provider and set up your location."
+-msgstr "Você não configurou um provedor de clima ainda. Para obeter informações de clima, escolha um provedor de clima e informa sua localização"
++msgstr "Você ainda não configurou um provedor de clima. Para obter informações sobre o clima, escolha um provedor de clima e informe sua localização."
+ 
+ msgctxt "#31121"
+ msgid "Set weather provider"
+diff --git a/addons/skin.estuary/language/resource.language.pt_pt/strings.po b/addons/skin.estuary/language/resource.language.pt_pt/strings.po
+index 1937b9a515..b8a05f96f5 100644
+--- a/addons/skin.estuary/language/resource.language.pt_pt/strings.po
++++ b/addons/skin.estuary/language/resource.language.pt_pt/strings.po
+@@ -48,6 +48,10 @@ msgctxt "#31007"
+ msgid "Unwatched movies"
+ msgstr "Filmes não vistos"
+ 
++msgctxt "#31008"
++msgid "Enable category widgets"
++msgstr "Ativar widgets de categorias"
++
+ msgctxt "#31009"
+ msgid "Download icons"
+ msgstr "Descarregar ícones"
+@@ -108,6 +112,10 @@ msgctxt "#31023"
+ msgid "Viewtype"
+ msgstr "Tipo de visualização"
+ 
++msgctxt "#31024"
++msgid "Choose rating to display for media items"
++msgstr "Escolher classificação a mostrar nos itens de média"
++
+ msgctxt "#31025"
+ msgid "No favourites found. You can add any item from media views to this list by using the context menu."
+ msgstr "Não há favoritos. Pode adicionar qualquer item a esta lista, usando o menu de contexto."
+@@ -220,6 +228,10 @@ msgctxt "#31061"
+ msgid "Main menu items"
+ msgstr "Itens do menu principal"
+ 
++msgctxt "#31062"
++msgid "Choose weather fanart pack"
++msgstr "Escolher o pacote de fanart de meteorologia"
++
+ msgctxt "#31063"
+ msgid "Sections"
+ msgstr "Secções"
+@@ -354,7 +366,7 @@ msgstr "Ver as suas imagens pessoais ou descarregar um dos vários add-ons de im
+ 
+ msgctxt "#31112"
+ msgid "Toggle audio stream"
+-msgstr "Comutar a transmissão de áudio"
++msgstr "Comutar a emissão de áudio"
+ 
+ msgctxt "#31113"
+ msgid "Search local library"
+@@ -428,6 +440,10 @@ msgctxt "#31130"
+ msgid "Main menu-related settings: Configure the home screen to your likings."
+ msgstr "Definições do menu principal: Configure o ecrã inicial ao seu gosto."
+ 
++msgctxt "#31131"
++msgid "Choose skin fanart pack"
++msgstr "Escolher pacote de fanart do tema"
++
+ msgctxt "#31132"
+ msgid "Select Program"
+ msgstr "Seleccione Programa"
+@@ -468,6 +484,10 @@ msgctxt "#31142"
+ msgid "Play speed"
+ msgstr "Velocidade de reprodução"
+ 
++msgctxt "#31143"
++msgid "You did not set up PVR yet. In order to use PVR, choose a PVR client addon and configure it. Please visit http://kodi.wiki/view/PVR to learn more."
++msgstr "Ainda não configurou o PVR. Para usar o PVR, escolha um add-on cliente de PVR e configure-o. Por favor visite http://kodi.wiki/view/PVR para saber mais."
++
+ msgctxt "#31144"
+ msgid "Enter add-on browser"
+ msgstr "Entrar no navegador de add-ons"
+@@ -480,6 +500,10 @@ msgctxt "#31148"
+ msgid "Categories"
+ msgstr "Categorias"
+ 
++msgctxt "#31149"
++msgid "Select genre fanart pack"
++msgstr "Escolher o pacote de fanart do género"
++
+ msgctxt "#31150"
+ msgid "Repository"
+ msgstr "Repositório"
+@@ -492,6 +516,10 @@ msgctxt "#31152"
+ msgid "Random music videos"
+ msgstr "Vídeos de música aleatórios"
+ 
++msgctxt "#31153"
++msgid "You do not have any add-ons of this type installed. Enter the add-on browser to download add-ons created by our community."
++msgstr "Não existem add-ons deste tipo instalados. Entre no navegador de add-ons para descarregar add-ons criados pela nossa comunidade."
++
+ msgctxt "#31154"
+ msgid "Press OK to switch between locations"
+ msgstr "Pressione OK para mudar entre as localizações"
+@@ -512,6 +540,38 @@ msgctxt "#31158"
+ msgid "Touch mode"
+ msgstr "Modo de toque"
+ 
++msgctxt "#31159"
++msgid "Artwork"
++msgstr "Imagens"
++
++msgctxt "#31160"
++msgid "Show media flags"
++msgstr "Mostrar emblemas de média"
++
++msgctxt "#31161"
++msgid "Numeric pad"
++msgstr "Teclado numérico"
++
++msgctxt "#31162"
++msgid "Play your personal games or download one of the many game add-ons from the official repository."
++msgstr "Jogue os seus jogos pessoais ou descarregue um dos vários add-ons de jogos presentes no repositório oficial."
++
++msgctxt "#31163"
++msgid "Show Fanart background"
++msgstr "Mostrar fundo de fanart"
++
++msgctxt "#31164"
++msgid "Choose kind of profile identification"
++msgstr "Escolha tipo de identificação do perfil"
++
+ msgctxt "#31165"
+ msgid "Profile name"
+ msgstr "Nome do perfil"
++
++msgctxt "#31166"
++msgid "Profile avatar"
++msgstr "Avatar do perfil"
++
++msgctxt "#31167"
++msgid "Animate background"
++msgstr "Fundo animado"
+diff --git a/addons/skin.estuary/media/flags/audiocodec/ape.png b/addons/skin.estuary/media/flags/audiocodec/ape.png
+index a9225508a4..f52ee0008b 100644
+Binary files a/addons/skin.estuary/media/flags/audiocodec/ape.png and b/addons/skin.estuary/media/flags/audiocodec/ape.png differ
+diff --git a/addons/skin.estuary/xml/DialogAddonSettings.xml b/addons/skin.estuary/xml/DialogAddonSettings.xml
+index a940712ae7..6821063e7a 100644
+--- a/addons/skin.estuary/xml/DialogAddonSettings.xml
++++ b/addons/skin.estuary/xml/DialogAddonSettings.xml
+@@ -73,6 +73,7 @@
+ 			<control type="radiobutton" id="8">
+ 				<description>Default RadioButton</description>
+ 				<include>DefaultSettingButton</include>
++				<textwidth>880</textwidth>
+ 			</control>
+ 			<control type="spincontrolex" id="9">
+ 				<description>Default SpinControlex</description>
+diff --git a/addons/skin.estuary/xml/DialogPictureInfo.xml b/addons/skin.estuary/xml/DialogPictureInfo.xml
+index 92c2fe0405..2a6d20e2d0 100644
+--- a/addons/skin.estuary/xml/DialogPictureInfo.xml
++++ b/addons/skin.estuary/xml/DialogPictureInfo.xml
+@@ -119,8 +119,8 @@
+ 			</control>
+ 		</control>
+ 		<include content="InfoDialogTopBarInfo">
+-			<param name="main_label" value="$INFO[ListItem.Label]" />
+-			<param name="sub_label" value="$INFO[ListItem.PictureDateTime]" />
++			<param name="main_label" value="$VAR[PictureInfoMainLabelVar]" />
++			<param name="sub_label" value="$VAR[PictureInfoSubLabelVar]" />
+ 		</include>
+ 		<include condition="Skin.HasSetting(touchmode)">TouchBackButton</include>
+ 	</controls>
+diff --git a/addons/skin.estuary/xml/Variables.xml b/addons/skin.estuary/xml/Variables.xml
+index 2755604acf..94a340cfa6 100644
+--- a/addons/skin.estuary/xml/Variables.xml
++++ b/addons/skin.estuary/xml/Variables.xml
+@@ -273,6 +273,14 @@
+ 		<value condition="Control.HasFocus(8)">$INFO[ListItem.LastPlayed,$LOCALIZE[568]: ]</value>
+ 		<value condition="Control.HasFocus(6)">$INFO[ListItem.FileNameAndPath]</value>
+ 	</variable>
++	<variable name="PictureInfoMainLabelVar">
++		<value condition="Window.IsActive(Slideshow)">$INFO[SlideShow.Filename]</value>
++		<value>$INFO[ListItem.Label]</value>
++	</variable>
++	<variable name="PictureInfoSubLabelVar">
++		<value condition="Window.IsActive(Slideshow)">$INFO[SlideShow.EXIFtime]</value>
++		<value>$INFO[ListItem.PictureDateTime]</value>
++	</variable>
+ 	<variable name="NowPlayingBreadcrumbsVar">
+ 		<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.Title]</value>
+ 		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[VideoPlayer.Season,[COLOR button_focus]S,[/COLOR]]$INFO[VideoPlayer.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[VideoPlayer.Title]</value>
+diff --git a/tools/depends/target/ffmpeg/FFMPEG-VERSION b/tools/depends/target/ffmpeg/FFMPEG-VERSION
+index d7883f0ee8..620fe798de 100644
+--- a/tools/depends/target/ffmpeg/FFMPEG-VERSION
++++ b/tools/depends/target/ffmpeg/FFMPEG-VERSION
+@@ -1,4 +1,4 @@
+ LIBNAME=ffmpeg
+ BASE_URL=https://github.com/xbmc/FFmpeg
+-VERSION=4.0.3-Leia-18.2
++VERSION=4.0.4-Leia-18.4
+ ARCHIVE=$(LIBNAME)-$(VERSION).tar.gz
+diff --git a/xbmc/PlayListPlayer.cpp b/xbmc/PlayListPlayer.cpp
+index a556ac2c19..cb7816c4a9 100644
+--- a/xbmc/PlayListPlayer.cpp
++++ b/xbmc/PlayListPlayer.cpp
+@@ -898,7 +898,8 @@ void PLAYLIST::CPlayListPlayer::OnApplicationMessage(KODI::MESSAGING::ThreadMess
+           // resolve only for a maximum of 5 times to avoid deadlocks (plugin:// paths can resolve to plugin:// paths)
+           for (int i = 0; URIUtils::IsPlugin(item->GetDynPath()) && i < 5; ++i)
+           {
+-            XFILE::CPluginDirectory::GetPluginResult(item->GetDynPath(), *item, true);
++            if (!XFILE::CPluginDirectory::GetPluginResult(item->GetDynPath(), *item, true))
++              return;
+           }
+           if (item->IsAudio() || item->IsVideo())
+             Play(item, pMsg->strParam);
+diff --git a/xbmc/cores/VideoPlayer/DVDCodecs/Video/DXVA.cpp b/xbmc/cores/VideoPlayer/DVDCodecs/Video/DXVA.cpp
+index d2c4f5177c..65a85abffa 100644
+--- a/xbmc/cores/VideoPlayer/DVDCodecs/Video/DXVA.cpp
++++ b/xbmc/cores/VideoPlayer/DVDCodecs/Video/DXVA.cpp
+@@ -841,6 +841,7 @@ CDecoder::CDecoder(CProcessInfo& processInfo)
+ {
+   m_event.Set();
+   m_context          = static_cast<AVD3D11VAContext*>(calloc(1, sizeof(AVD3D11VAContext)));
++  m_context->context_mutex = INVALID_HANDLE_VALUE;
+   m_context->cfg     = reinterpret_cast<D3D11_VIDEO_DECODER_CONFIG*>(calloc(1, sizeof(D3D11_VIDEO_DECODER_CONFIG)));
+   m_context->surface = reinterpret_cast<ID3D11VideoDecoderOutputView**>(calloc(32, sizeof(ID3D11VideoDecoderOutputView*)));
+   m_bufferPool.reset();
+diff --git a/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.cpp b/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.cpp
+index ce559f0b28..6445470f6f 100644
+--- a/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.cpp
++++ b/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.cpp
+@@ -31,6 +31,10 @@
+ #include "utils/StringUtils.h"
+ #include "utils/URIUtils.h"
+ 
++#ifdef TARGET_POSIX
++#include "platform/linux/XTimeUtils.h"
++#endif
++
+ #ifdef HAVE_LIBBLURAY
+ #include "DVDInputStreams/DVDInputStreamBluray.h"
+ #endif
+@@ -259,12 +263,30 @@ bool CDVDDemuxFFmpeg::Open(std::shared_ptr<CDVDInputStream> pInput, bool streami
+         strFile = url.Get();
+       }
+     }
+-    if (result < 0 && avformat_open_input(&m_pFormatContext, strFile.c_str(), iformat, &options) < 0 )
++    if (result < 0)
+     {
+-      CLog::Log(LOGDEBUG, "Error, could not open file %s", CURL::GetRedacted(strFile).c_str());
+-      Dispose();
++      m_pFormatContext->flags |= AVFMT_FLAG_PRIV_OPT;
++      if (avformat_open_input(&m_pFormatContext, strFile.c_str(), iformat, &options) < 0)
++      {
++        CLog::Log(LOGDEBUG, "Error, could not open file %s", CURL::GetRedacted(strFile).c_str());
++        Dispose();
++        av_dict_free(&options);
++        return false;
++      }
+       av_dict_free(&options);
+-      return false;
++      avformat_close_input(&m_pFormatContext);
++      m_pFormatContext = avformat_alloc_context();
++      m_pFormatContext->interrupt_callback = int_cb;
++      m_pFormatContext->flags &= ~AVFMT_FLAG_PRIV_OPT;
++      AVDictionary* options = GetFFMpegOptionsFromInput();
++      av_dict_set_int(&options, "load_all_variants", 0, AV_OPT_SEARCH_CHILDREN);
++      if (avformat_open_input(&m_pFormatContext, strFile.c_str(), iformat, &options) < 0)
++      {
++        CLog::Log(LOGDEBUG, "Error, could not open file (2) %s", CURL::GetRedacted(strFile).c_str());
++        Dispose();
++        av_dict_free(&options);
++        return false;
++      }
+     }
+     av_dict_free(&options);
+   }
+@@ -486,6 +508,9 @@ bool CDVDDemuxFFmpeg::Open(std::shared_ptr<CDVDInputStream> pInput, bool streami
+     }
+     CLog::Log(LOGDEBUG, "%s - av_find_stream_info finished", __FUNCTION__);
+ 
++    // print some extra information
++    av_dump_format(m_pFormatContext, 0, CURL::GetRedacted(strFile).c_str(), 0);
++
+     if (m_checkvideo)
+     {
+       // make sure we start video with an i-frame
+@@ -505,14 +530,17 @@ bool CDVDDemuxFFmpeg::Open(std::shared_ptr<CDVDInputStream> pInput, bool streami
+   // if format can be nonblocking, let's use that
+   m_pFormatContext->flags |= AVFMT_FLAG_NONBLOCK;
+ 
+-  // print some extra information
+-  av_dump_format(m_pFormatContext, 0, CURL::GetRedacted(strFile).c_str(), 0);
+-
+   // deprecated, will be always set in future versions
+   m_pFormatContext->flags |= AVFMT_FLAG_KEEP_SIDE_DATA;
+ 
+   UpdateCurrentPTS();
+ 
++  // select the correct program if requested
++  m_initialProgramNumber = UINT_MAX;
++  CVariant programProp(pInput->GetProperty("program"));
++  if (!programProp.isNull())
++    m_initialProgramNumber = static_cast<int>(programProp.asInteger());
++
+   // in case of mpegts and we have not seen pat/pmt, defer creation of streams
+   if (!skipCreateStreams || m_pFormatContext->nb_programs > 0)
+   {
+@@ -520,16 +548,14 @@ bool CDVDDemuxFFmpeg::Open(std::shared_ptr<CDVDInputStream> pInput, bool streami
+     if (m_pFormatContext->nb_programs > 0)
+     {
+       // select the correct program if requested
+-      CVariant programProp(pInput->GetProperty("program"));
+-      if (!programProp.isNull())
++      if (m_initialProgramNumber != UINT_MAX)
+       {
+-        int programNumber = static_cast<int>(programProp.asInteger());
+-
+         for (unsigned int i = 0; i < m_pFormatContext->nb_programs; ++i)
+         {
+-          if (m_pFormatContext->programs[i]->program_num == programNumber)
++          if (m_pFormatContext->programs[i]->program_num == static_cast<int>(m_initialProgramNumber))
+           {
+             nProgram = i;
++            m_initialProgramNumber = UINT_MAX;
+             break;
+           }
+         }
+@@ -560,14 +586,26 @@ bool CDVDDemuxFFmpeg::Open(std::shared_ptr<CDVDInputStream> pInput, bool streami
+     CreateStreams(nProgram);
+   }
+ 
++  m_newProgram = m_program;
++
+   // allow IsProgramChange to return true
+   if (skipCreateStreams && GetNrOfStreams() == 0)
+     m_program = 0;
+ 
+-  m_newProgram = m_program;
+   m_displayTime = 0;
+   m_dtsAtDisplayTime = DVD_NOPTS_VALUE;
+   m_startTime = 0;
++  m_seekStream = -1;
++
++  if (m_checkvideo && m_streaminfo)
++  {
++    int64_t duration = m_pFormatContext->duration;
++    std::shared_ptr<CDVDInputStream> pInputStream = m_pInput;
++    Dispose();
++    if (!Open(pInputStream, false))
++      return false;
++    m_pFormatContext->duration = duration;
++  }
+ 
+   // seems to be a bug in ffmpeg, hls jumps back to start after a couple of seconds
+   // this cures the issue
+@@ -868,12 +906,12 @@ double CDVDDemuxFFmpeg::ConvertTimestamp(int64_t pts, int den, int num)
+   if (!menu && m_pFormatContext->start_time != (int64_t)AV_NOPTS_VALUE)
+     starttime = (double)m_pFormatContext->start_time / AV_TIME_BASE;
+ 
+-  if (!m_streaminfo)
++  if (m_checkvideo)
+     starttime = m_startTime;
+ 
+   if (!m_bSup)
+   {
+-    if (timestamp > starttime || !m_streaminfo)
++    if (timestamp > starttime || m_checkvideo)
+       timestamp -= starttime;
+     // allow for largest possible difference in pts and dts for a single packet
+     else if (timestamp + 0.5f > starttime)
+@@ -945,6 +983,9 @@ DemuxPacket* CDVDDemuxFFmpeg::Read()
+ 
+       if (IsProgramChange())
+       {
++        CLog::Log(LOGNOTICE, "CDVDDemuxFFmpeg::Read() stream change");
++        av_dump_format(m_pFormatContext, 0, CURL::GetRedacted(m_pInput->GetFileName()).c_str(), 0);
++
+         // update streams
+         CreateStreams(m_program);
+ 
+@@ -1126,21 +1167,46 @@ bool CDVDDemuxFFmpeg::SeekTime(double time, bool backwards, double *startpts)
+   int64_t seek_pts = (int64_t)time * (AV_TIME_BASE / 1000);
+   bool ismp3 = m_pFormatContext->iformat && (strcmp(m_pFormatContext->iformat->name, "mp3") == 0);
+ 
+-  if (!m_streaminfo)
+-    seek_pts += m_startTime * AV_TIME_BASE;
++  if (m_checkvideo)
++  {
++    XbmcThreads::EndTime timer(1000);
++
++    while (!IsVideoReady())
++    {
++      DemuxPacket* pkt = Read();
++      if (pkt)
++        CDVDDemuxUtils::FreeDemuxPacket(pkt);
++      else
++        Sleep(10);
++      m_pkt.result = -1;
++      av_packet_unref(&m_pkt.pkt);
++
++      if (timer.IsTimePast())
++      {
++        CLog::Log(LOGERROR, "CDVDDemuxFFmpeg::%s - Timed out waiting for video to be ready", __FUNCTION__);
++        return false;
++      }
++    }
++
++    AVStream* st = m_pFormatContext->streams[m_seekStream];
++    seek_pts = av_rescale(m_startTime + time / 1000, st->time_base.den, st->time_base.num);
++  }
+   else if (m_pFormatContext->start_time != (int64_t)AV_NOPTS_VALUE && !ismp3 && !m_bSup)
+     seek_pts += m_pFormatContext->start_time;
+ 
+   int ret;
+   {
+     CSingleLock lock(m_critSection);
+-    ret = av_seek_frame(m_pFormatContext, -1, seek_pts, backwards ? AVSEEK_FLAG_BACKWARD : 0);
++    ret = av_seek_frame(m_pFormatContext, m_seekStream, seek_pts, backwards ? AVSEEK_FLAG_BACKWARD : 0);
+ 
+     if (ret < 0)
+     {
+       int64_t starttime = m_pFormatContext->start_time;
+-      if (!m_streaminfo)
+-        starttime = m_startTime * AV_TIME_BASE;
++      if (m_checkvideo)
++      {
++        AVStream* st = m_pFormatContext->streams[m_seekStream];
++        starttime = av_rescale(m_startTime, st->time_base.num, st->time_base.den);
++      }
+ 
+       // demuxer can return failure, if seeking behind eof
+       if (m_pFormatContext->duration &&
+@@ -1359,6 +1425,8 @@ void CDVDDemuxFFmpeg::CreateStreams(unsigned int program)
+     }
+     if (m_program != UINT_MAX)
+     {
++      m_pFormatContext->programs[m_program]->discard = AVDISCARD_NONE;
++
+       // add streams from selected program
+       for (unsigned int i = 0; i < m_pFormatContext->programs[m_program]->nb_stream_indexes; i++)
+       {
+@@ -1855,6 +1923,21 @@ bool CDVDDemuxFFmpeg::IsProgramChange()
+   if (m_program == 0 && !m_pFormatContext->nb_programs)
+     return false;
+ 
++  if (m_initialProgramNumber != UINT_MAX)
++  {
++    for (unsigned int i = 0; i < m_pFormatContext->nb_programs; ++i)
++    {
++      if (m_pFormatContext->programs[i]->program_num == static_cast<int>(m_initialProgramNumber))
++      {
++        m_newProgram = i;
++        m_initialProgramNumber = UINT_MAX;
++        break;
++      }
++    }
++    if (m_initialProgramNumber != UINT_MAX)
++      return false;
++  }
++
+   if (m_program != m_newProgram)
+   {
+     m_program = m_newProgram;
+@@ -1914,7 +1997,7 @@ unsigned int CDVDDemuxFFmpeg::HLSSelectProgram()
+       }
+     }
+ 
+-    if (strRes < selectedRes && selectedBitrate < bandwidth)
++    if ((strRes && strRes < selectedRes) && selectedBitrate < bandwidth)
+       continue;
+ 
+     bool want = false;
+@@ -2074,7 +2157,10 @@ bool CDVDDemuxFFmpeg::IsVideoReady()
+         if (st->codecpar->extradata)
+         {
+           if (!m_startTime)
+-            m_startTime = av_rescale(st->cur_dts, st->time_base.num, st->time_base.den);
++          {
++            m_startTime = av_rescale(st->cur_dts, st->time_base.num, st->time_base.den) - 0.000001;
++            m_seekStream = i;
++          }
+           return true;
+         }
+         hasVideo = true;
+@@ -2090,7 +2176,8 @@ bool CDVDDemuxFFmpeg::IsVideoReady()
+         st = m_pFormatContext->streams[idx];
+         if (st->codecpar->codec_type == AVMEDIA_TYPE_AUDIO)
+         {
+-          m_startTime = static_cast<double>(av_rescale(st->cur_dts, st->time_base.num, st->time_base.den));
++          m_startTime = av_rescale(st->cur_dts, st->time_base.num, st->time_base.den) - 0.000001;
++          m_seekStream = i;
+           break;
+         }
+       }
+@@ -2106,7 +2193,10 @@ bool CDVDDemuxFFmpeg::IsVideoReady()
+         if (st->codecpar->extradata)
+         {
+           if (!m_startTime)
+-            m_startTime = av_rescale(st->cur_dts, st->time_base.num, st->time_base.den);
++          {
++            m_startTime = av_rescale(st->cur_dts, st->time_base.num, st->time_base.den) - 0.000001;
++            m_seekStream = i;
++          }
+           return true;
+         }
+         hasVideo = true;
+@@ -2121,7 +2211,8 @@ bool CDVDDemuxFFmpeg::IsVideoReady()
+         st = m_pFormatContext->streams[i];
+         if (st->codecpar->codec_type == AVMEDIA_TYPE_AUDIO)
+         {
+-          m_startTime = static_cast<double>(av_rescale(st->cur_dts, st->time_base.num, st->time_base.den));
++          m_startTime = av_rescale(st->cur_dts, st->time_base.num, st->time_base.den) - 0.000001;
++          m_seekStream = i;
+           break;
+         }
+       }
+diff --git a/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.h b/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.h
+index f7374b438f..3d280ac361 100644
+--- a/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.h
++++ b/xbmc/cores/VideoPlayer/DVDDemuxers/DVDDemuxFFmpeg.h
+@@ -145,6 +145,8 @@ protected:
+   unsigned int m_program;
+   unsigned int m_streamsInProgram;
+   unsigned int m_newProgram;
++  unsigned int m_initialProgramNumber;
++  int m_seekStream;
+ 
+   XbmcThreads::EndTime  m_timeout;
+ 
+diff --git a/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.cpp b/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.cpp
+index 39e3866fac..c524a2ff69 100644
+--- a/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.cpp
++++ b/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.cpp
+@@ -289,11 +289,18 @@ void CLinuxRendererGLES::LoadPlane(CYuvPlane& plane, int type,
+     }
+     else
+     {
++      size_t planeSize = width * height * bps;
++      if (m_planeBufferSize < planeSize)
++      {
++        m_planeBuffer = static_cast<unsigned char*>(realloc(m_planeBuffer, planeSize));
++        m_planeBufferSize = planeSize;
++      }
++
+       unsigned char *src(static_cast<unsigned char*>(data)),
+                     *dst(m_planeBuffer);
+ 
+-      for (unsigned int y = 0; y < height; ++y, src += stride, dst += width * bpp)
+-        memcpy(dst, src, width * bpp);
++      for (unsigned int y = 0; y < height; ++y, src += stride, dst += width * bps)
++        memcpy(dst, src, width * bps);
+ 
+       pixelData = m_planeBuffer;
+     }
+@@ -1292,11 +1299,9 @@ bool CLinuxRendererGLES::CreateYV12Texture(int index)
+   im.planesize[1] = im.stride[1] * (im.height >> im.cshift_y);
+   im.planesize[2] = im.stride[2] * (im.height >> im.cshift_y);
+ 
+-  m_planeBuffer = static_cast<unsigned char*>(realloc(m_planeBuffer, m_sourceHeight * m_sourceWidth * im.bpp));
+-
+   for (int i = 0; i < 3; i++)
+   {
+-    im.plane[i] = new uint8_t[im.planesize[i]];
++    im.plane[i] = nullptr; // will be set in UploadTexture()
+   }
+ 
+   for(int f = 0; f < MAX_FIELDS; f++)
+@@ -1459,7 +1464,7 @@ bool CLinuxRendererGLES::CreateNV12Texture(int index)
+ 
+   for (int i = 0; i < 2; i++)
+   {
+-    im.plane[i] = new uint8_t[im.planesize[i]];
++    im.plane[i] = nullptr; // will be set in UploadTexture()
+   }
+ 
+   for(int f = 0; f < MAX_FIELDS; f++)
+diff --git a/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.h b/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.h
+index b0f53705d2..ecb4a9f8c7 100644
+--- a/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.h
++++ b/xbmc/cores/VideoPlayer/VideoRenderers/LinuxRendererGLES.h
+@@ -203,6 +203,7 @@ protected:
+   AVColorPrimaries m_srcPrimaries;
+   bool m_toneMap = false;
+   unsigned char* m_planeBuffer = nullptr;
++  size_t m_planeBufferSize = 0;
+ 
+   // clear colour for "black" bars
+   float m_clearColour{0.0f};
+diff --git a/xbmc/cores/paplayer/VideoPlayerCodec.cpp b/xbmc/cores/paplayer/VideoPlayerCodec.cpp
+index d761d09294..f3195c9d16 100644
+--- a/xbmc/cores/paplayer/VideoPlayerCodec.cpp
++++ b/xbmc/cores/paplayer/VideoPlayerCodec.cpp
+@@ -514,6 +514,11 @@ CAEStreamInfo::DataType VideoPlayerCodec::GetPassthroughStreamType(AVCodecID cod
+       format.m_streamInfo.m_sampleRate = samplerate;
+       break;
+ 
++    case AV_CODEC_ID_TRUEHD:
++      format.m_streamInfo.m_type = CAEStreamInfo::STREAM_TYPE_TRUEHD;
++      format.m_streamInfo.m_sampleRate = samplerate;
++      break;
++
+     default:
+       format.m_streamInfo.m_type = CAEStreamInfo::STREAM_TYPE_NULL;
+   }
+diff --git a/xbmc/filesystem/CircularCache.cpp b/xbmc/filesystem/CircularCache.cpp
+index 5709a67d53..41561c7351 100644
+--- a/xbmc/filesystem/CircularCache.cpp
++++ b/xbmc/filesystem/CircularCache.cpp
+@@ -24,7 +24,7 @@ CCircularCache::CCircularCache(size_t front, size_t back)
+  , m_size(front + back)
+  , m_size_back(back)
+ #ifdef TARGET_WINDOWS
+- , m_handle(INVALID_HANDLE_VALUE)
++ , m_handle(NULL)
+ #endif
+ {
+ }
+@@ -44,7 +44,7 @@ int CCircularCache::Open()
+ #else
+   m_buf = new uint8_t[m_size];
+ #endif
+-  if(m_buf == 0)
++  if (m_buf == NULL)
+     return CACHE_RC_ERROR;
+   m_beg = 0;
+   m_end = 0;
+@@ -55,9 +55,11 @@ int CCircularCache::Open()
+ void CCircularCache::Close()
+ {
+ #ifdef TARGET_WINDOWS
+-  UnmapViewOfFile(m_buf);
+-  CloseHandle(m_handle);
+-  m_handle = INVALID_HANDLE_VALUE;
++  if (m_buf != NULL)
++    UnmapViewOfFile(m_buf);
++  if (m_handle != NULL)
++    CloseHandle(m_handle);
++  m_handle = NULL;
+ #else
+   delete[] m_buf;
+ #endif
+@@ -118,6 +120,9 @@ int CCircularCache::WriteToCache(const char *buf, size_t len)
+   if(len == 0)
+     return 0;
+ 
++  if (m_buf == NULL)
++    return 0;
++
+   // write the data
+   memcpy(m_buf + pos, buf, len);
+   m_end += len;
+@@ -158,6 +163,9 @@ int CCircularCache::ReadFromCache(char *buf, size_t len)
+   if(len == 0)
+     return 0;
+ 
++  if (m_buf == NULL)
++    return 0;
++
+   memcpy(buf, m_buf + pos, len);
+   m_cur += len;
+ 
+diff --git a/xbmc/filesystem/HTTPDirectory.cpp b/xbmc/filesystem/HTTPDirectory.cpp
+index 484c00efe2..d95c9e304f 100644
+--- a/xbmc/filesystem/HTTPDirectory.cpp
++++ b/xbmc/filesystem/HTTPDirectory.cpp
+@@ -103,6 +103,18 @@ bool CHTTPDirectory::GetDirectory(const CURL& url, CFileItemList &items)
+         strLinkOptions = strLinkBase.substr(pos);
+         strLinkBase.erase(pos);
+       }
++
++      // encoding + and ; to URL encode if it is not already encoded by http server used on the remote server (example: Apache)
++      // more characters may be added here when required when required by certain http servers
++      pos = strLinkBase.find_first_of("+;");
++      while (pos != std::string::npos) 
++      {
++        std::stringstream convert;
++        convert << '%' << std::hex << int(strLinkBase.at(pos));
++        strLinkBase.replace(pos, 1, convert.str());
++        pos = strLinkBase.find_first_of("+;");
++      }
++
+       std::string strLinkTemp = strLinkBase;
+ 
+       URIUtils::RemoveSlashAtEnd(strLinkTemp);
+diff --git a/xbmc/filesystem/PluginDirectory.cpp b/xbmc/filesystem/PluginDirectory.cpp
+index fcc3a15e1f..204678e9c8 100644
+--- a/xbmc/filesystem/PluginDirectory.cpp
++++ b/xbmc/filesystem/PluginDirectory.cpp
+@@ -387,7 +387,7 @@ void CPluginDirectory::AddSortMethod(int handle, SORT_METHOD sortMethod, const s
+       }
+     case SORT_METHOD_EPISODE:
+       {
+-        dir->m_listItems->AddSortMethod(SortByEpisodeNumber, 20359, LABEL_MASKS("%E. %T","%R"));
++        dir->m_listItems->AddSortMethod(SortByEpisodeNumber, 20359, LABEL_MASKS("%H. %T", "%R"));
+         break;
+       }
+     case SORT_METHOD_PRODUCTIONCODE:
+diff --git a/xbmc/games/controllers/windows/GUIControllerList.cpp b/xbmc/games/controllers/windows/GUIControllerList.cpp
+index 43770f8f1b..e86fe3246b 100644
+--- a/xbmc/games/controllers/windows/GUIControllerList.cpp
++++ b/xbmc/games/controllers/windows/GUIControllerList.cpp
+@@ -59,7 +59,7 @@ bool CGUIControllerList::Initialize(void)
+     m_controllerButton->SetVisible(false);
+ 
+   CServiceBroker::GetAddonMgr().Events().Subscribe(this, &CGUIControllerList::OnEvent);
+-  Refresh();
++  Refresh("");
+ 
+   return m_controllerList != nullptr &&
+          m_controllerButton != nullptr;
+@@ -75,8 +75,17 @@ void CGUIControllerList::Deinitialize(void)
+   m_controllerButton = nullptr;
+ }
+ 
+-bool CGUIControllerList::Refresh(void)
++bool CGUIControllerList::Refresh(const std::string& controllerId)
+ {
++  // Focus specified controller after refresh
++  std::string focusController = controllerId;
++
++  if (focusController.empty() && m_focusedController >= 0)
++  {
++    // If controller ID wasn't provided, focus current controller
++    focusController = m_controllers[m_focusedController]->ID();
++  }
++
+   if (!RefreshControllers())
+     return false;
+ 
+@@ -92,6 +101,12 @@ bool CGUIControllerList::Refresh(void)
+       CGUIButtonControl* pButton = new CGUIControllerButton(*m_controllerButton, controller->Layout().Label(), buttonId++);
+       m_controllerList->AddControl(pButton);
+ 
++      if (!focusController.empty() && controller->ID() == focusController)
++      {
++        CGUIMessage msg(GUI_MSG_SETFOCUS, m_guiWindow->GetID(), pButton->GetID());
++        m_guiWindow->OnMessage(msg);
++      }
++
+       // Just in case
+       if (buttonId >= MAX_CONTROLLER_COUNT)
+         break;
+@@ -146,11 +161,19 @@ void CGUIControllerList::ResetController(void)
+ 
+ void CGUIControllerList::OnEvent(const ADDON::AddonEvent& event)
+ {
+-  if (typeid(event) == typeid(ADDON::AddonEvents::ReInstalled) ||
++  if (typeid(event) == typeid(ADDON::AddonEvents::Enabled) ||  // also called on install,
++      typeid(event) == typeid(ADDON::AddonEvents::Disabled) || // not called on uninstall
++      typeid(event) == typeid(ADDON::AddonEvents::ReInstalled) ||
+       typeid(event) == typeid(ADDON::AddonEvents::UnInstalled))
+   {
+     using namespace MESSAGING;
+     CGUIMessage msg(GUI_MSG_REFRESH_LIST, m_guiWindow->GetID(), CONTROL_CONTROLLER_LIST);
++
++    // Focus installed add-on
++    if (typeid(event) == typeid(ADDON::AddonEvents::Enabled) ||
++        typeid(event) == typeid(ADDON::AddonEvents::ReInstalled))
++      msg.SetStringParam(event.id);
++
+     CApplicationMessenger::GetInstance().SendGUIMessage(msg, m_guiWindow->GetID());
+   }
+ }
+diff --git a/xbmc/games/controllers/windows/GUIControllerList.h b/xbmc/games/controllers/windows/GUIControllerList.h
+index c78ca25f87..5403fd3138 100644
+--- a/xbmc/games/controllers/windows/GUIControllerList.h
++++ b/xbmc/games/controllers/windows/GUIControllerList.h
+@@ -35,7 +35,7 @@ namespace GAME
+     // implementation of IControllerList
+     virtual bool Initialize(void) override;
+     virtual void Deinitialize(void) override;
+-    virtual bool Refresh(void) override;
++    virtual bool Refresh(const std::string& controllerId) override;
+     virtual void OnFocus(unsigned int controllerIndex) override;
+     virtual void OnSelect(unsigned int controllerIndex) override;
+     virtual int GetFocusedController() const override { return m_focusedController; }
+diff --git a/xbmc/games/controllers/windows/GUIControllerWindow.cpp b/xbmc/games/controllers/windows/GUIControllerWindow.cpp
+index 65cfba0563..2e225bdf28 100644
+--- a/xbmc/games/controllers/windows/GUIControllerWindow.cpp
++++ b/xbmc/games/controllers/windows/GUIControllerWindow.cpp
+@@ -165,7 +165,8 @@ bool CGUIControllerWindow::OnMessage(CGUIMessage& message)
+ 
+       if (controlId == CONTROL_CONTROLLER_LIST)
+       {
+-        if (m_controllerList && m_controllerList->Refresh())
++        const std::string controllerId = message.GetStringParam();
++        if (m_controllerList && m_controllerList->Refresh(controllerId))
+         {
+           CGUIDialog::OnMessage(message);
+           bHandled = true;
+@@ -188,10 +189,24 @@ void CGUIControllerWindow::OnEvent(const ADDON::CRepositoryUpdater::RepositoryUp
+   UpdateButtons();
+ }
+ 
++void CGUIControllerWindow::OnEvent(const ADDON::AddonEvent& event)
++{
++  using namespace ADDON;
++
++  if (typeid(event) == typeid(AddonEvents::Enabled) || // also called on install,
++      typeid(event) == typeid(AddonEvents::Disabled) || // not called on uninstall
++      typeid(event) == typeid(AddonEvents::UnInstalled) ||
++      typeid(event) == typeid(AddonEvents::ReInstalled))
++  {
++    if (CServiceBroker::GetAddonMgr().HasType(event.id, ADDON_GAME_CONTROLLER))
++    {
++      UpdateButtons();
++    }
++  }
++}
++
+ void CGUIControllerWindow::OnInitWindow(void)
+ {
+-  // subscribe to events
+-  CServiceBroker::GetRepositoryUpdater().Events().Subscribe(this, &CGUIControllerWindow::OnEvent);
+   // Get active game add-on
+   GameClientPtr gameClient;
+   {
+@@ -235,11 +250,16 @@ void CGUIControllerWindow::OnInitWindow(void)
+   CServiceBroker::GetPeripherals().EnableButtonMapping();
+ 
+   UpdateButtons();
++
++  // subscribe to events
++  CServiceBroker::GetRepositoryUpdater().Events().Subscribe(this, &CGUIControllerWindow::OnEvent);
++  CServiceBroker::GetAddonMgr().Events().Subscribe(this, &CGUIControllerWindow::OnEvent);
+ }
+ 
+ void CGUIControllerWindow::OnDeinitWindow(int nextWindowID)
+ {
+   CServiceBroker::GetRepositoryUpdater().Events().Unsubscribe(this);
++  CServiceBroker::GetAddonMgr().Events().Unsubscribe(this);
+ 
+   if (m_controllerList)
+   {
+diff --git a/xbmc/games/controllers/windows/GUIControllerWindow.h b/xbmc/games/controllers/windows/GUIControllerWindow.h
+index 72fdbf1e7a..a6cfcb262a 100644
+--- a/xbmc/games/controllers/windows/GUIControllerWindow.h
++++ b/xbmc/games/controllers/windows/GUIControllerWindow.h
+@@ -42,9 +42,12 @@ namespace GAME
+     void OnControllerSelected(unsigned int controllerIndex);
+     void OnFeatureFocused(unsigned int featureIndex);
+     void OnFeatureSelected(unsigned int featureIndex);
+-    void OnEvent(const ADDON::CRepositoryUpdater::RepositoryUpdated& event);
+     void UpdateButtons(void);
+ 
++    // Callbacks for events
++    void OnEvent(const ADDON::CRepositoryUpdater::RepositoryUpdated& event);
++    void OnEvent(const ADDON::AddonEvent& event);
++
+     // Action for the available button
+     void GetMoreControllers(void);
+     void GetAllControllers();
+diff --git a/xbmc/games/controllers/windows/IConfigurationWindow.h b/xbmc/games/controllers/windows/IConfigurationWindow.h
+index 86b7d52577..da2307bf5d 100644
+--- a/xbmc/games/controllers/windows/IConfigurationWindow.h
++++ b/xbmc/games/controllers/windows/IConfigurationWindow.h
+@@ -64,9 +64,10 @@ namespace GAME
+ 
+     /*!
+      * \brief Refresh the contents of the list
++     * \param controllerId The controller to focus, or empty to leave focus unchanged
+      * \return True if the list was changed
+      */
+-    virtual bool Refresh(void) = 0;
++    virtual bool Refresh(const std::string& controllerId) = 0;
+ 
+     /*
+      * \brief  The specified controller has been focused
+diff --git a/xbmc/guilib/guiinfo/PicturesGUIInfo.cpp b/xbmc/guilib/guiinfo/PicturesGUIInfo.cpp
+index 33765d8bab..b13cfb4954 100644
+--- a/xbmc/guilib/guiinfo/PicturesGUIInfo.cpp
++++ b/xbmc/guilib/guiinfo/PicturesGUIInfo.cpp
+@@ -93,15 +93,20 @@ CPicturesGUIInfo::~CPicturesGUIInfo()
+ 
+ void CPicturesGUIInfo::SetCurrentSlide(CFileItem *item)
+ {
++  if (m_currentSlide && item && m_currentSlide->GetPath() == item->GetPath())
++    return;
++
+   if (item)
+   {
+-    CPictureInfoTag* tag = item->GetPictureInfoTag();  // creates item if not yet set, so no nullptr checks needed
+-    if (!tag->Loaded()) // If picture metadata has not been loaded yet, load it now
+-      tag->Load(item->GetPath());
+-
++    if (item->HasPictureInfoTag()) // Note: item may also be a video
++    {
++      CPictureInfoTag* tag = item->GetPictureInfoTag();
++      if (!tag->Loaded()) // If picture metadata has not been loaded yet, load it now
++        tag->Load(item->GetPath());
++    }
+     m_currentSlide.reset(new CFileItem(*item));
+   }
+-  else
++  else if (m_currentSlide)
+   {
+     m_currentSlide.reset();
+   }
+@@ -202,7 +207,7 @@ bool CPicturesGUIInfo::GetLabel(std::string& value, const CFileItem *item, int c
+     {
+       case LISTITEM_PICTURE_PATH:
+       {
+-        if (!item->IsZIP() || item->IsRAR() || item->IsCBZ() || item->IsCBR())
++        if (!(item->IsZIP() || item->IsRAR() || item->IsCBZ() || item->IsCBR()))
+         {
+           value = item->GetPath();
+           return true;
+diff --git a/xbmc/interfaces/builtins/PlayerBuiltins.cpp b/xbmc/interfaces/builtins/PlayerBuiltins.cpp
+index dabb959e65..4008e1f5c1 100644
+--- a/xbmc/interfaces/builtins/PlayerBuiltins.cpp
++++ b/xbmc/interfaces/builtins/PlayerBuiltins.cpp
+@@ -429,7 +429,7 @@ static int PlayMedia(const std::vector<std::string>& params)
+     if ( CGUIWindowVideoBase::ShowResumeMenu(item) == false )
+       return false;
+   }
+-  if (item.m_bIsFolder || item.IsPlayList() || item.IsSmartPlayList())
++  if (item.m_bIsFolder)
+   {
+     CFileItemList items;
+     std::string extensions = CServiceBroker::GetFileExtensionProvider().GetVideoExtensions() + "|" + CServiceBroker::GetFileExtensionProvider().GetMusicExtensions();
+@@ -471,7 +471,7 @@ static int PlayMedia(const std::vector<std::string>& params)
+       return 0;
+     }
+   }
+-  if (item.IsAudio() || item.IsVideo())
++  if ((item.IsAudio() || item.IsVideo()) && !item.IsPlayList() && !item.IsSmartPlayList())
+     CServiceBroker::GetPlaylistPlayer().Play(std::make_shared<CFileItem>(item), "");
+   else
+     g_application.PlayMedia(item, "", PLAYLIST_NONE);
+diff --git a/xbmc/pictures/GUIWindowSlideShow.cpp b/xbmc/pictures/GUIWindowSlideShow.cpp
+index ef8a4eaf1c..bbb4906ae8 100644
+--- a/xbmc/pictures/GUIWindowSlideShow.cpp
++++ b/xbmc/pictures/GUIWindowSlideShow.cpp
+@@ -509,13 +509,9 @@ void CGUIWindowSlideShow::Process(unsigned int currentTime, CDirtyRegionList &re
+     }
+   }
+ 
+-  if (m_slides.at(m_iCurrentSlide)->IsVideo() &&
+-      m_iVideoSlide != m_iCurrentSlide)
+-  {
+-    if (!PlayVideo())
+-      return;
++  bool bPlayVideo = m_slides.at(m_iCurrentSlide)->IsVideo() && m_iVideoSlide != m_iCurrentSlide;
++  if (bPlayVideo)
+     bSlideShow = false;
+-  }
+ 
+   // render the current image
+   if (m_Image[m_iCurrentPic].IsLoaded())
+@@ -603,6 +599,8 @@ void CGUIWindowSlideShow::Process(unsigned int currentTime, CDirtyRegionList &re
+       }
+       m_iCurrentSlide = m_iNextSlide;
+       m_iNextSlide    = GetNextSlide();
++
++      bPlayVideo = m_slides.at(m_iCurrentSlide)->IsVideo() && m_iVideoSlide != m_iCurrentSlide;
+     }
+     AnnouncePlayerPlay(m_slides.at(m_iCurrentSlide));
+ 
+@@ -611,6 +609,9 @@ void CGUIWindowSlideShow::Process(unsigned int currentTime, CDirtyRegionList &re
+     m_fRotate = 0.0f;
+   }
+ 
++  if (bPlayVideo && !PlayVideo())
++      return;
++
+   if (m_Image[m_iCurrentPic].IsLoaded())
+     CServiceBroker::GetGUI()->GetInfoManager().GetInfoProviders().GetPicturesInfoProvider().SetCurrentSlide(m_slides.at(m_iCurrentSlide).get());
+ 
+@@ -629,14 +630,30 @@ void CGUIWindowSlideShow::Render()
+   if (m_slides.empty())
+     return;
+ 
+-  CServiceBroker::GetWinSystem()->GetGfxContext().Clear(0xff000000);
++  CGraphicContext& gfxCtx = CServiceBroker::GetWinSystem()->GetGfxContext();
++  gfxCtx.Clear(0xff000000);
+ 
+   if (m_slides.at(m_iCurrentSlide)->IsVideo())
+   {
+-    CServiceBroker::GetWinSystem()->GetGfxContext().SetViewWindow(0, 0, m_coordsRes.iWidth, m_coordsRes.iHeight);
+-    CServiceBroker::GetWinSystem()->GetGfxContext().SetRenderingResolution(CServiceBroker::GetWinSystem()->GetGfxContext().GetVideoResolution(), false);
+-    g_application.GetAppPlayer().Render(true, 255);
+-    CServiceBroker::GetWinSystem()->GetGfxContext().SetRenderingResolution(m_coordsRes, m_needsScaling);
++    gfxCtx.SetViewWindow(0, 0, m_coordsRes.iWidth, m_coordsRes.iHeight);
++    gfxCtx.SetRenderingResolution(gfxCtx.GetVideoResolution(), false);
++
++    if (g_application.GetAppPlayer().IsRenderingVideoLayer())
++    {
++      const CRect old = gfxCtx.GetScissors();
++      CRect region = GetRenderRegion();
++      region.Intersect(old);
++      gfxCtx.SetScissors(region);
++      gfxCtx.Clear(0);
++      gfxCtx.SetScissors(old);
++    }
++    else
++    {
++      const UTILS::Color alpha = gfxCtx.MergeAlpha(0xff000000) >> 24;
++      g_application.GetAppPlayer().Render(false, alpha);
++    }
++
++    gfxCtx.SetRenderingResolution(m_coordsRes, m_needsScaling);
+   }
+   else
+   {
+@@ -651,6 +668,14 @@ void CGUIWindowSlideShow::Render()
+   CGUIWindow::Render();
+ }
+ 
++void CGUIWindowSlideShow::RenderEx()
++{
++  if (m_slides.at(m_iCurrentSlide)->IsVideo())
++    g_application.GetAppPlayer().Render(false, 255, false);
++
++  CGUIWindow::RenderEx();
++}
++
+ int CGUIWindowSlideShow::GetNextSlide()
+ {
+   if (m_slides.size() <= 1)
+diff --git a/xbmc/pictures/GUIWindowSlideShow.h b/xbmc/pictures/GUIWindowSlideShow.h
+index ca68784841..7971db2210 100644
+--- a/xbmc/pictures/GUIWindowSlideShow.h
++++ b/xbmc/pictures/GUIWindowSlideShow.h
+@@ -57,6 +57,7 @@ public:
+   EVENT_RESULT OnMouseEvent(const CPoint &point, const CMouseEvent &event) override;
+   bool OnAction(const CAction &action) override;
+   void Render() override;
++  void RenderEx() override;
+   void Process(unsigned int currentTime, CDirtyRegionList &regions) override;
+   void OnDeinitWindow(int nextWindowID) override;
+ 
+diff --git a/xbmc/platform/android/activity/XBMCApp.cpp b/xbmc/platform/android/activity/XBMCApp.cpp
+index e9ae1ab073..a6bab84433 100644
+--- a/xbmc/platform/android/activity/XBMCApp.cpp
++++ b/xbmc/platform/android/activity/XBMCApp.cpp
+@@ -1395,6 +1395,12 @@ void CXBMCApp::onDisplayAdded(int displayId)
+ void CXBMCApp::onDisplayChanged(int displayId)
+ {
+   CLog::Log(LOGDEBUG, "CXBMCApp::%s: id: %d", __FUNCTION__, displayId);
++
++  // Update display modes
++  CWinSystemAndroid* winSystemAndroid = dynamic_cast<CWinSystemAndroid*>(CServiceBroker::GetWinSystem());
++  if (winSystemAndroid)
++    winSystemAndroid->UpdateDisplayModes();
++
+   m_displayChangeEvent.Set();
+   android_printf("%s: ", __PRETTY_FUNCTION__);
+ }
+diff --git a/xbmc/pvr/PVRGUIDirectory.cpp b/xbmc/pvr/PVRGUIDirectory.cpp
+index b2ce07ef85..e5033dd03e 100644
+--- a/xbmc/pvr/PVRGUIDirectory.cpp
++++ b/xbmc/pvr/PVRGUIDirectory.cpp
+@@ -162,7 +162,6 @@ bool IsDirectoryMember(const std::string& strDirectory,
+ }
+ 
+ void GetSubDirectories(const CPVRRecordingsPath& recParentPath,
+-                       CVideoDatabase& videoDB,
+                        const std::vector<std::shared_ptr<CPVRRecording>>& recordings,
+                        CFileItemList& results)
+ {
+@@ -187,8 +186,6 @@ void GetSubDirectories(const CPVRRecordingsPath& recParentPath,
+     recChildPath.AppendSegment(strCurrent);
+     const std::string strFilePath = recChildPath;
+ 
+-    recording->UpdateMetadata(videoDB);
+-
+     std::shared_ptr<CFileItem> item;
+     if (!results.Contains(strFilePath))
+     {
+@@ -223,9 +220,7 @@ void GetSubDirectories(const CPVRRecordingsPath& recParentPath,
+ bool CPVRGUIDirectory::GetRecordingsDirectory(CFileItemList& results) const
+ {
+   bool bGrouped = false;
+-  const std::shared_ptr<CPVRRecordings> recs = CServiceBroker::GetPVRManager().Recordings();
+-  const std::vector<std::shared_ptr<CPVRRecording>> recordings = recs->GetAll();
+-  CVideoDatabase& videoDB = recs->GetVideoDatabase();
++  const std::vector<std::shared_ptr<CPVRRecording>> recordings = CServiceBroker::GetPVRManager().Recordings()->GetAll();
+ 
+   if (m_url.HasOption("view"))
+   {
+@@ -252,7 +247,7 @@ bool CPVRGUIDirectory::GetRecordingsDirectory(CFileItemList& results) const
+     // Deleted view is always flatten. So only for an active view
+     const std::string strDirectory = recPath.GetUnescapedDirectoryPath();
+     if (!recPath.IsDeleted() && bGrouped)
+-      GetSubDirectories(recPath, videoDB, recordings, results);
++      GetSubDirectories(recPath, recordings, results);
+ 
+     // get all files of the current directory or recursively all files starting at the current directory if in flatten mode
+     std::shared_ptr<CFileItem> item;
+@@ -264,8 +259,6 @@ bool CPVRGUIDirectory::GetRecordingsDirectory(CFileItemList& results) const
+           !IsDirectoryMember(strDirectory, recording->m_strDirectory, bGrouped))
+         continue;
+ 
+-      recording->UpdateMetadata(videoDB);
+-
+       item = std::make_shared<CFileItem>(recording);
+       item->SetOverlayImage(CGUIListItem::ICON_OVERLAY_UNWATCHED, recording->GetPlayCount() > 0);
+       results.Add(item);
+diff --git a/xbmc/pvr/PVRManager.cpp b/xbmc/pvr/PVRManager.cpp
+index df41b440e2..b76265e858 100644
+--- a/xbmc/pvr/PVRManager.cpp
++++ b/xbmc/pvr/PVRManager.cpp
+@@ -650,10 +650,10 @@ bool CPVRManager::IsPlayingEpgTag(const CPVREpgInfoTagPtr &epgTag) const
+   return bReturn;
+ }
+ 
+-bool CPVRManager::MatchPlayingChannel(int iClientID, int iUniqueChannelID) const
++bool CPVRManager::IsPlayingChannel(int iClientID, int iUniqueChannelID) const
+ {
+   if (m_playingChannel)
+-    return m_playingChannel->ClientID() == iClientID && m_playingChannel->UniqueID() == iUniqueChannelID;
++    return m_playingClientId == iClientID && m_iplayingChannelUniqueID == iUniqueChannelID;
+ 
+   return false;
+ }
+@@ -686,7 +686,7 @@ int CPVRManager::GetPlayingClientID(void) const
+ bool CPVRManager::IsRecordingOnPlayingChannel(void) const
+ {
+   const CPVRChannelPtr currentChannel = GetPlayingChannel();
+-  return currentChannel && CServiceBroker::GetPVRManager().Timers()->IsRecordingOnChannel(*currentChannel);
++  return currentChannel && m_timers && m_timers->IsRecordingOnChannel(*currentChannel);
+ }
+ 
+ bool CPVRManager::CanRecordOnPlayingChannel(void) const
+@@ -799,6 +799,7 @@ void CPVRManager::OnPlaybackStarted(const CFileItemPtr item)
+   m_playingRecording.reset();
+   m_playingEpgTag.reset();
+   m_playingClientId = -1;
++  m_iplayingChannelUniqueID = -1;
+   m_strPlayingClientName.clear();
+ 
+   if (item->HasPVRChannelInfoTag())
+@@ -807,6 +808,7 @@ void CPVRManager::OnPlaybackStarted(const CFileItemPtr item)
+ 
+     m_playingChannel = channel;
+     m_playingClientId = m_playingChannel->ClientID();
++    m_iplayingChannelUniqueID = m_playingChannel->UniqueID();
+ 
+     SetPlayingGroup(channel);
+ 
+@@ -878,18 +880,21 @@ void CPVRManager::OnPlaybackStopped(const CFileItemPtr item)
+ 
+     m_playingChannel.reset();
+     m_playingClientId = -1;
++    m_iplayingChannelUniqueID = -1;
+     m_strPlayingClientName.clear();
+   }
+   else if (item->HasPVRRecordingInfoTag() && item->GetPVRRecordingInfoTag() == m_playingRecording)
+   {
+     m_playingRecording.reset();
+     m_playingClientId = -1;
++    m_iplayingChannelUniqueID = -1;
+     m_strPlayingClientName.clear();
+   }
+   else if (item->HasEPGInfoTag() && item->GetEPGInfoTag() == m_playingEpgTag)
+   {
+     m_playingEpgTag.reset();
+     m_playingClientId = -1;
++    m_iplayingChannelUniqueID = -1;
+     m_strPlayingClientName.clear();
+   }
+ 
+diff --git a/xbmc/pvr/PVRManager.h b/xbmc/pvr/PVRManager.h
+index 76a2290b1e..b8449b0c77 100644
+--- a/xbmc/pvr/PVRManager.h
++++ b/xbmc/pvr/PVRManager.h
+@@ -245,7 +245,7 @@ namespace PVR
+      * @param iUniqueChannelID The channel uid.
+      * @return True on match, false if there is no match or no channel is playing.
+      */
+-    bool MatchPlayingChannel(int iClientID, int iUniqueChannelID) const;
++    bool IsPlayingChannel(int iClientID, int iUniqueChannelID) const;
+ 
+     /*!
+      * @brief Return the channel that is currently playing.
+@@ -560,6 +560,7 @@ namespace PVR
+     CPVREpgInfoTagPtr m_playingEpgTag;
+     std::string m_strPlayingClientName;
+     int m_playingClientId = -1;
++    int m_iplayingChannelUniqueID = -1;
+ 
+     class CLastWatchedUpdateTimer;
+     std::unique_ptr<CLastWatchedUpdateTimer> m_lastWatchedUpdateTimer;
+diff --git a/xbmc/pvr/epg/EpgInfoTag.cpp b/xbmc/pvr/epg/EpgInfoTag.cpp
+index 8c37ffe3b7..aa87c2e2a4 100644
+--- a/xbmc/pvr/epg/EpgInfoTag.cpp
++++ b/xbmc/pvr/epg/EpgInfoTag.cpp
+@@ -221,7 +221,7 @@ void CPVREpgInfoTag::ToSortable(SortItem& sortable, Field field) const
+ 
+ CDateTime CPVREpgInfoTag::GetCurrentPlayingTime() const
+ {
+-  if (CServiceBroker::GetPVRManager().MatchPlayingChannel(ClientID(), UniqueChannelID()))
++  if (CServiceBroker::GetPVRManager().IsPlayingChannel(ClientID(), UniqueChannelID()))
+   {
+     // start time valid?
+     time_t startTime = CServiceBroker::GetDataCacheCore().GetStartTime();
+diff --git a/xbmc/pvr/recordings/PVRRecordings.cpp b/xbmc/pvr/recordings/PVRRecordings.cpp
+index ee69673d87..62f922e392 100644
+--- a/xbmc/pvr/recordings/PVRRecordings.cpp
++++ b/xbmc/pvr/recordings/PVRRecordings.cpp
+@@ -254,6 +254,7 @@ void CPVRRecordings::UpdateFromClient(const CPVRRecordingPtr &tag)
+   {
+     newTag = CPVRRecordingPtr(new CPVRRecording);
+     newTag->Update(*tag);
++    newTag->UpdateMetadata(GetVideoDatabase());
+     newTag->m_iRecordingId = ++m_iLastId;
+     m_recordings.insert(std::make_pair(CPVRRecordingUid(newTag->m_iClientId, newTag->m_strRecordingId), newTag));
+     if (newTag->IsRadio())
+@@ -302,6 +303,8 @@ bool CPVRRecordings::ChangeRecordingsPlayCount(const CFileItemPtr &item, int cou
+ {
+   bool bResult = false;
+ 
++  CSingleLock lock(m_critSection);
++
+   CVideoDatabase& db = GetVideoDatabase();
+   if (db.IsOpen())
+   {
+@@ -378,6 +381,8 @@ bool CPVRRecordings::ResetResumePoint(const CFileItemPtr item)
+   const CPVRRecordingPtr recording = item->GetPVRRecordingInfoTag();
+   if (recording)
+   {
++    CSingleLock lock(m_critSection);
++
+     CVideoDatabase& db = GetVideoDatabase();
+     if (db.IsOpen())
+     {
+diff --git a/xbmc/pvr/recordings/PVRRecordings.h b/xbmc/pvr/recordings/PVRRecordings.h
+index 79352d0d90..da82f1481b 100644
+--- a/xbmc/pvr/recordings/PVRRecordings.h
++++ b/xbmc/pvr/recordings/PVRRecordings.h
+@@ -83,12 +83,6 @@ namespace PVR
+      */
+     CPVRRecordingPtr GetRecordingForEpgTag(const CPVREpgInfoTagPtr &epgTag) const;
+ 
+-    /**
+-     * @brief Get/Open the video database.
+-     * @return A reference to the video database.
+-     */
+-    CVideoDatabase& GetVideoDatabase();
+-
+   private:
+     mutable CCriticalSection m_critSection;
+     bool m_bIsUpdating = false;
+@@ -102,6 +96,12 @@ namespace PVR
+ 
+     void UpdateFromClients(void);
+ 
++    /*!
++     * @brief Get/Open the video database.
++     * @return A reference to the video database.
++     */
++    CVideoDatabase& GetVideoDatabase();
++
+     /**
+      * @brief recursively deletes all recordings in the specified directory
+      * @param item the directory
+diff --git a/xbmc/settings/DisplaySettings.cpp b/xbmc/settings/DisplaySettings.cpp
+index e808eaa438..9bd6ce43b4 100644
+--- a/xbmc/settings/DisplaySettings.cpp
++++ b/xbmc/settings/DisplaySettings.cpp
+@@ -87,7 +87,7 @@ static std::string ModeFlagsToString(unsigned int flags, bool identifier)
+ 
+ CDisplaySettings::CDisplaySettings()
+ {
+-  m_resolutions.insert(m_resolutions.begin(), RES_CUSTOM, RESOLUTION_INFO());
++  m_resolutions.resize(RES_CUSTOM);
+ 
+   m_zoomAmount = 1.0f;
+   m_pixelRatio = 1.0f;
+@@ -218,6 +218,7 @@ void CDisplaySettings::Clear()
+   CSingleLock lock(m_critical);
+   m_calibrations.clear();
+   m_resolutions.clear();
++  m_resolutions.resize(RES_CUSTOM);
+ 
+   m_zoomAmount = 1.0f;
+   m_pixelRatio = 1.0f;
+diff --git a/xbmc/video/VideoDatabase.cpp b/xbmc/video/VideoDatabase.cpp
+index 1b96904146..4af4ae8e79 100644
+--- a/xbmc/video/VideoDatabase.cpp
++++ b/xbmc/video/VideoDatabase.cpp
+@@ -3621,7 +3621,7 @@ int CVideoDatabase::GetDbId(const std::string &query)
+ 
+ void CVideoDatabase::DeleteStreamDetails(int idFile)
+ {
+-    m_pDS->exec(PrepareSQL("delete from streamdetails where idFile=%i", idFile));
++  m_pDS->exec(PrepareSQL("DELETE FROM streamdetails WHERE idFile = %i", idFile));
+ }
+ 
+ void CVideoDatabase::DeleteSet(int idSet)
+diff --git a/xbmc/video/VideoDatabase.h b/xbmc/video/VideoDatabase.h
+index addc77e798..6297327140 100644
+--- a/xbmc/video/VideoDatabase.h
++++ b/xbmc/video/VideoDatabase.h
+@@ -550,6 +550,7 @@ public:
+   void DeleteMusicVideo(const std::string& strFilenameAndPath, bool bKeepId = false);
+   void DeleteDetailsForTvShow(int idTvShow);
+   void DeleteDetailsForTvShow(const std::string& strPath);
++  void DeleteStreamDetails(int idFile);
+   void RemoveContentForPath(const std::string& strPath,CGUIDialogProgress *progress = NULL);
+   void UpdateFanart(const CFileItem &item, VIDEODB_CONTENT_TYPE type);
+   void DeleteSet(int idSet);
+@@ -929,7 +930,6 @@ protected:
+ 
+   void AddCast(int mediaId, const char *mediaType, const std::vector<SActorInfo> &cast);
+ 
+-  void DeleteStreamDetails(int idFile);
+   CVideoInfoTag GetDetailsForMovie(std::unique_ptr<dbiplus::Dataset> &pDS, int getDetails = VideoDbDetailsNone);
+   CVideoInfoTag GetDetailsForMovie(const dbiplus::sql_record* const record, int getDetails = VideoDbDetailsNone);
+   CVideoInfoTag GetDetailsForTvShow(std::unique_ptr<dbiplus::Dataset> &pDS, int getDetails = VideoDbDetailsNone, CFileItem* item = NULL);
+diff --git a/xbmc/video/windows/GUIWindowVideoBase.cpp b/xbmc/video/windows/GUIWindowVideoBase.cpp
+index ce086ea081..fadf6fd1cf 100644
+--- a/xbmc/video/windows/GUIWindowVideoBase.cpp
++++ b/xbmc/video/windows/GUIWindowVideoBase.cpp
+@@ -378,6 +378,22 @@ bool CGUIWindowVideoBase::ShowIMDB(CFileItemPtr item, const ScraperPtr &info2, b
+         item->SetPath(item->GetVideoInfoTag()->GetPath());
+     }
+   }
++  
++  if (needsRefresh)
++  {
++    // Delete stream details (=media flags). This allows users to force
++    // a refresh of the stream details by performing a video info refresh
++    const int fileId = item->GetVideoInfoTag()->m_iFileId;
++    if (fileId > 0)
++    {
++      CVideoDatabase db;
++      if (db.Open())
++      {
++        db.DeleteStreamDetails(fileId);
++        db.Close();
++      }
++    }
++  }
+ 
+   const std::shared_ptr<CProfileManager> profileManager = CServiceBroker::GetSettingsComponent()->GetProfileManager();
+ 
+diff --git a/xbmc/windowing/android/AndroidUtils.cpp b/xbmc/windowing/android/AndroidUtils.cpp
+index 372fb71023..14314d744b 100644
+--- a/xbmc/windowing/android/AndroidUtils.cpp
++++ b/xbmc/windowing/android/AndroidUtils.cpp
+@@ -239,7 +239,7 @@ bool CAndroidUtils::GetNativeResolution(RESOLUTION_INFO *res) const
+ 
+ bool CAndroidUtils::SetNativeResolution(const RESOLUTION_INFO &res)
+ {
+-  CLog::Log(LOGDEBUG, "CAndroidUtils: SetNativeResolution: %s: %dx%d %dx%d@%f", res.strId.c_str(), res.iWidth, res.iHeight, res.iScreenWidth, res.iScreenHeight, res.fRefreshRate);
++  CLog::Log(LOGNOTICE, "CAndroidUtils: SetNativeResolution: %s: %dx%d %dx%d@%f", res.strId.c_str(), res.iWidth, res.iHeight, res.iScreenWidth, res.iScreenHeight, res.fRefreshRate);
+ 
+   if (s_hasModeApi)
+   {
+@@ -314,6 +314,12 @@ bool CAndroidUtils::ProbeResolutions(std::vector<RESOLUTION_INFO> &resolutions)
+   return false;
+ }
+ 
++bool CAndroidUtils::UpdateDisplayModes()
++{
++  fetchDisplayModes();
++  return true;
++}
++
+ void  CAndroidUtils::OnSettingChanged(std::shared_ptr<const CSetting> setting)
+ {
+   const std::string &settingId = setting->GetId();
+diff --git a/xbmc/windowing/android/AndroidUtils.h b/xbmc/windowing/android/AndroidUtils.h
+index e006ff1f41..8ef50fcbe3 100644
+--- a/xbmc/windowing/android/AndroidUtils.h
++++ b/xbmc/windowing/android/AndroidUtils.h
+@@ -24,6 +24,7 @@ public:
+   virtual bool  GetNativeResolution(RESOLUTION_INFO *res) const;
+   virtual bool  SetNativeResolution(const RESOLUTION_INFO &res);
+   virtual bool  ProbeResolutions(std::vector<RESOLUTION_INFO> &resolutions);
++  virtual bool UpdateDisplayModes();
+ 
+   // Implementation of ISettingCallback
+   static const std::string SETTING_LIMITGUI;
+diff --git a/xbmc/windowing/android/WinSystemAndroid.cpp b/xbmc/windowing/android/WinSystemAndroid.cpp
+index 3790d3e0a0..7890f0437c 100644
+--- a/xbmc/windowing/android/WinSystemAndroid.cpp
++++ b/xbmc/windowing/android/WinSystemAndroid.cpp
+@@ -129,7 +129,7 @@ bool CWinSystemAndroid::CreateNewWindow(const std::string& name,
+ 
+   if (m_dispResetState != RESET_NOTWAITING)
+   {
+-    CLog::Log(LOGINFO, "CWinSystemAndroid::CreateNewWindow: cannot create window while resetting");
++    CLog::Log(LOGERROR, "CWinSystemAndroid::CreateNewWindow: cannot create window while resetting");
+     return false;
+   }
+ 
+@@ -156,48 +156,59 @@ bool CWinSystemAndroid::DestroyWindow()
+ }
+ 
+ void CWinSystemAndroid::UpdateResolutions()
++{
++  UpdateResolutions(true);
++}
++
++void CWinSystemAndroid::UpdateResolutions(bool bUpdateDesktopRes)
+ {
+   CWinSystemBase::UpdateResolutions();
+ 
+-  RESOLUTION_INFO resDesktop, curDisplay;
+   std::vector<RESOLUTION_INFO> resolutions;
+-
+   if (!m_android->ProbeResolutions(resolutions) || resolutions.empty())
+   {
+     CLog::Log(LOGWARNING, "CWinSystemAndroid::%s failed.", __FUNCTION__);
+   }
+ 
+-  /* ProbeResolutions includes already all resolutions.
+-   * Only get desktop resolution so we can replace xbmc's desktop res
+-   */
+-  if (m_android->GetNativeResolution(&curDisplay))
++  const RESOLUTION_INFO resWindow = CDisplaySettings::GetInstance().GetResolutionInfo(RES_WINDOW);
++
++  RESOLUTION_INFO resDesktop;
++  if (bUpdateDesktopRes)
++  {
++    // ProbeResolutions includes already all resolutions.
++    // Only get desktop resolution so we can replace Kodi's desktop res.
++    RESOLUTION_INFO curDisplay;
++    if (m_android->GetNativeResolution(&curDisplay))
++      resDesktop = curDisplay;
++  }
++  else
+   {
+-    resDesktop = curDisplay;
++    // Do not replace Kodi's desktop res, just update the data.
++    resDesktop = CDisplaySettings::GetInstance().GetResolutionInfo(RES_DESKTOP);
+   }
+ 
+-  RESOLUTION res_index  = RES_CUSTOM;
++  CDisplaySettings::GetInstance().ClearCustomResolutions();
+ 
+-  for (size_t i = 0; i < resolutions.size(); i++)
++  for (auto& res : resolutions)
+   {
+-    // if this is a new setting,
+-    // create a new empty setting to fill in.
+-    while ((int)CDisplaySettings::GetInstance().ResolutionInfoSize() <= res_index)
++    CServiceBroker::GetWinSystem()->GetGfxContext().ResetOverscan(res);
++    CDisplaySettings::GetInstance().AddResolutionInfo(res);
++
++    if (resDesktop.iScreenWidth == res.iScreenWidth &&
++        resDesktop.iScreenHeight == res.iScreenHeight &&
++        (resDesktop.dwFlags & D3DPRESENTFLAG_MODEMASK) == (res.dwFlags & D3DPRESENTFLAG_MODEMASK) &&
++        std::fabs(resDesktop.fRefreshRate - res.fRefreshRate) < FLT_EPSILON)
+     {
+-      RESOLUTION_INFO res;
+-      CDisplaySettings::GetInstance().AddResolutionInfo(res);
++      CDisplaySettings::GetInstance().GetResolutionInfo(RES_DESKTOP) = res;
+     }
+ 
+-    CServiceBroker::GetWinSystem()->GetGfxContext().ResetOverscan(resolutions[i]);
+-    CDisplaySettings::GetInstance().GetResolutionInfo(res_index) = resolutions[i];
+-
+-    if (resDesktop.iScreenWidth == resolutions[i].iScreenWidth &&
+-       resDesktop.iScreenHeight == resolutions[i].iScreenHeight &&
+-       (resDesktop.dwFlags & D3DPRESENTFLAG_MODEMASK) == (resolutions[i].dwFlags & D3DPRESENTFLAG_MODEMASK) &&
+-       fabs(resDesktop.fRefreshRate - resolutions[i].fRefreshRate) < FLT_EPSILON)
++    if (resWindow.iScreenWidth == res.iScreenWidth &&
++        resWindow.iScreenHeight == res.iScreenHeight &&
++        (resWindow.dwFlags & D3DPRESENTFLAG_MODEMASK) == (res.dwFlags & D3DPRESENTFLAG_MODEMASK) &&
++        std::fabs(resWindow.fRefreshRate - res.fRefreshRate) < FLT_EPSILON)
+     {
+-      CDisplaySettings::GetInstance().GetResolutionInfo(RES_DESKTOP) = resolutions[i];
++      CDisplaySettings::GetInstance().GetResolutionInfo(RES_WINDOW) = res;
+     }
+-    res_index = (RESOLUTION)((int)res_index + 1);
+   }
+ }
+ 
+@@ -244,6 +255,18 @@ void CWinSystemAndroid::SetHDMIState(bool connected)
+   }
+ }
+ 
++void CWinSystemAndroid::UpdateDisplayModes()
++{
++  // re-fetch display modes
++  m_android->UpdateDisplayModes();
++
++  if (m_nativeWindow)
++  {
++    // update display settings
++    UpdateResolutions(false);
++  }
++}
++
+ bool CWinSystemAndroid::Hide()
+ {
+   return false;
+diff --git a/xbmc/windowing/android/WinSystemAndroid.h b/xbmc/windowing/android/WinSystemAndroid.h
+index e7f11dbff2..0682223348 100644
+--- a/xbmc/windowing/android/WinSystemAndroid.h
++++ b/xbmc/windowing/android/WinSystemAndroid.h
+@@ -37,6 +37,8 @@ public:
+ 
+   void SetHDMIState(bool connected);
+ 
++  void UpdateDisplayModes();
++
+   bool HasCursor() override { return false; };
+ 
+   bool Hide() override;
+@@ -76,4 +78,7 @@ protected:
+   CCriticalSection m_resourceSection;
+   std::vector<IDispResource*> m_resources;
+   CDecoderFilterManager *m_decoderFilterManager;
++
++private:
++  void UpdateResolutions(bool bUpdateDesktopRes);
+ };
