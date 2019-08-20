@@ -1,0 +1,104 @@
+when remounting bind mount add explicit MS_BIND to parameters
+to "hide" bind mount from user's view
+bind mount is only visible from /proc/self/mountinfo that's why
+we traverse the lines until appropriate data is found
+
+--- a/util-linux/mount.c	2019-06-10 22:09:31.000000000 +0200
++++ b/util-linux/mount.c	2019-08-17 21:15:09.206410522 +0200
+@@ -1887,6 +1887,85 @@ static int nfsmount(struct mntent *mp, u
+ 
+ #endif // !ENABLE_FEATURE_MOUNT_NFS
+ 
++// Check mount point in /proc/self/mountinfo and identify bind mount
++// return 1 for bind mount, 0 for normal mount
++static int check_bind_mount(struct mntent *mp)
++{
++int mnt_dir_len;
++int mnt_fsname_len;
++char *p;
++FILE *fp;
++char *line = NULL;
++
++	// http://man7.org/linux/man-pages/man5/proc.5.html
++	// 21 20 179:20 /coreelec_flash /flash ro,noatime shared:2 - ext4 /dev/data rw,resgid=1065,data=ordered
++	// 20 22 179:1 / /flash ro,noatime shared:2 - vfat /dev/mmcblk1p1 ro,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
++
++	fp = fopen("/proc/self/mountinfo", "r");
++	if (fp == NULL)
++		return 0;
++
++	// remove trailing /
++	mnt_dir_len = strlen(mp->mnt_dir);
++	if (mnt_dir_len > 1 && mp->mnt_dir[mnt_dir_len - 1] == '/') {
++		mnt_dir_len--;
++		mp->mnt_dir[mnt_dir_len] = '\0';
++	}
++
++	mnt_fsname_len = strlen(mp->mnt_fsname);
++	if (mnt_fsname_len > 1 && mp->mnt_fsname[mnt_fsname_len - 1] == '/') {
++		mnt_fsname_len--;
++		mp->mnt_fsname[mnt_fsname_len] = '\0';
++	}
++
++	while ((line = xmalloc_fgetline(fp)) != NULL) {
++		// find root
++		p = strchr(line, ' ');
++		if (p == NULL)
++			continue;
++
++		p = strchr(p + 1, ' ');
++		if (p == NULL)
++			continue;
++
++		p = strchr(p + 1, ' ');
++		if (p == NULL)
++			continue;
++
++		p++;		// skip space
++		// bind mount has folder here and not just "/"
++		if (strncmp(p, "/ ", 2) == 0)
++			continue;
++
++		// maybe at searched mount bind
++		// find mount point
++		p = strchr(p, ' ');
++		if (p == NULL)
++			continue;
++
++		p++;		// skip space
++		if (strstr(p, mp->mnt_dir) == NULL ||
++				p[strlen(mp->mnt_dir)] != ' ')
++			continue;
++
++		// check if two args used with same value
++		if ((mnt_dir_len == mnt_fsname_len) &&
++			  (strcmp(mp->mnt_dir, mp->mnt_fsname) == 0))
++			return 1;		// no mount source known here
++
++		// find mount source
++		p = strstr(p + strlen(mp->mnt_dir), mp->mnt_fsname);
++		if (p != NULL && p[strlen(mp->mnt_fsname)] == ' ')
++			return 1;
++	}
++
++	if (line != NULL)
++		free(line);
++
++	fclose(fp);
++	return 0;
++}
++
+ // Mount one directory.  Handles CIFS, NFS, loopback, autobind, and filesystem
+ // type detection.  Returns 0 for success, nonzero for failure.
+ // NB: mp->xxx fields may be trashed on exit
+@@ -2058,6 +2125,10 @@ static int singlemount(struct mntent *mp
+ 			vfsflags |= MS_BIND;
+ 	}
+ 
++	// if remounting bind mount add explicit MS_BIND
++	if ((vfsflags & MS_REMOUNT) && (check_bind_mount(mp) == 1))
++		vfsflags |= MS_BIND;
++
+ 	// If we know the fstype (or don't need to), jump straight
+ 	// to the actual mount.
+ 	if (mp->mnt_type || (vfsflags & (MS_REMOUNT | MS_BIND | MS_MOVE))) {
