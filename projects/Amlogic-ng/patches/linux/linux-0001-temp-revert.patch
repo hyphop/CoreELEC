@@ -1,0 +1,163 @@
+From 789db86df19d625046ca178a73a15e368b92509d Mon Sep 17 00:00:00 2001
+From: adamg <adamg88@users.noreply.github.com>
+Date: Wed, 28 Aug 2019 05:23:02 +0100
+Subject: [PATCH] Revert "idle: sm1: enable sm1 idle function [1/1]"
+
+This reverts commit 290a0a347c0915693c6d8f741d950a07e657064b.
+---
+ arch/arm/boot/dts/amlogic/mesonsm1.dtsi   | 12 ++++++------
+ arch/arm/kernel/sleep.S                   |  5 -----
+ arch/arm64/boot/dts/amlogic/mesonsm1.dtsi | 12 ++++++------
+ arch/arm64/kernel/sleep.S                 |  8 --------
+ 4 files changed, 12 insertions(+), 25 deletions(-)
+
+diff --git a/arch/arm/boot/dts/amlogic/mesonsm1.dtsi b/arch/arm/boot/dts/amlogic/mesonsm1.dtsi
+index 0092cbe0741d..e7b315151b8f 100644
+--- a/arch/arm/boot/dts/amlogic/mesonsm1.dtsi
++++ b/arch/arm/boot/dts/amlogic/mesonsm1.dtsi
+@@ -55,7 +55,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x0>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -73,7 +73,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x1>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -91,7 +91,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x2>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -109,7 +109,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x3>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -128,9 +128,9 @@
+ 					compatible = "arm,idle-state";
+ 					arm,psci-suspend-param = <0x0010000>;
+ 					local-timer-stop;
+-					entry-latency-us = <4000>;
++					entry-latency-us = <5000>;
+ 					exit-latency-us = <5000>;
+-					min-residency-us = <10000>;
++					min-residency-us = <15000>;
+ 			};
+ 		};
+ 	};
+diff --git a/arch/arm/kernel/sleep.S b/arch/arm/kernel/sleep.S
+index dd52f5c182e4..0f6c1000582c 100644
+--- a/arch/arm/kernel/sleep.S
++++ b/arch/arm/kernel/sleep.S
+@@ -136,12 +136,7 @@ ARM_BE8(setend be)			@ ensure we are in BE mode
+ 	safe_svcmode_maskall r1
+ 	mov	r1, #0
+ 	ALT_SMP(mrc p15, 0, r0, c0, c0, 5)
+-	ALT_SMP(and r2, r0, #1<<24)
+-	ALT_SMP(cmp r2, #0)
+-	ALT_SMP(beq 2f)
+-	ALT_SMP(lsr r0, r0, #8)
+ 	ALT_UP_B(1f)
+-2:
+ 	adr	r2, mpidr_hash_ptr
+ 	ldr	r3, [r2]
+ 	add	r2, r2, r3		@ r2 = struct mpidr_hash phys address
+diff --git a/arch/arm64/boot/dts/amlogic/mesonsm1.dtsi b/arch/arm64/boot/dts/amlogic/mesonsm1.dtsi
+index 23f3e1456fc2..847117e05445 100644
+--- a/arch/arm64/boot/dts/amlogic/mesonsm1.dtsi
++++ b/arch/arm64/boot/dts/amlogic/mesonsm1.dtsi
+@@ -55,7 +55,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x0 0x0>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -73,7 +73,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x0 0x1>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -91,7 +91,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x0 0x2>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -109,7 +109,7 @@
+ 			compatible = "arm,cortex-a53","arm,armv8";
+ 			reg = <0x0 0x3>;
+ 			enable-method = "psci";
+-			cpu-idle-states = <&CPU_SLEEP_0>;
++//			cpu-idle-states = <&CPU_SLEEP_0>;
+ 			clocks = <&clkc CLKID_CPU_CLK>,
+ 				<&clkc CLKID_CPU_FCLK_P>,
+ 				<&clkc CLKID_SYS_PLL>;
+@@ -128,9 +128,9 @@
+ 					compatible = "arm,idle-state";
+ 					arm,psci-suspend-param = <0x0010000>;
+ 					local-timer-stop;
+-					entry-latency-us = <4000>;
++					entry-latency-us = <5000>;
+ 					exit-latency-us = <5000>;
+-					min-residency-us = <10000>;
++					min-residency-us = <15000>;
+ 			};
+ 		};
+ 	};
+diff --git a/arch/arm64/kernel/sleep.S b/arch/arm64/kernel/sleep.S
+index 32a9754a884d..5a4fbcc744d2 100644
+--- a/arch/arm64/kernel/sleep.S
++++ b/arch/arm64/kernel/sleep.S
+@@ -75,10 +75,6 @@ ENTRY(__cpu_suspend_enter)
+ 	/* find the mpidr_hash */
+ 	ldr_l	x1, sleep_save_stash
+ 	mrs	x7, mpidr_el1
+-	ubfx x2, x7, #24, 1
+-	cbz x2, __cpu_suspend_enter_cont
+-	lsr x7, x7, #8
+-__cpu_suspend_enter_cont:
+ 	adr_l	x9, mpidr_hash
+ 	ldr	x10, [x9, #MPIDR_HASH_MASK]
+ 	/*
+@@ -113,10 +109,6 @@ ENDPROC(cpu_resume)
+ 
+ ENTRY(_cpu_resume)
+ 	mrs	x1, mpidr_el1
+-	ubfx x2, x1, #24, 1
+-	cbz x2, _cpu_resume_cont
+-	lsr x1, x1, #8
+-_cpu_resume_cont:
+ 	adr_l	x8, mpidr_hash		// x8 = struct mpidr_hash virt address
+ 
+ 	/* retrieve mpidr_hash members to compute the hash */
+-- 
+2.17.1
+
