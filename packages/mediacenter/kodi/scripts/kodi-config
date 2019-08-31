@@ -22,6 +22,22 @@ if [ ! -f $KODI_ROOT/userdata/sources.xml ]; then
   fi
 fi
 
+#device specific configs
+mkdir -p /var/share/kodi/system/settings/
+
+if grep -q "g12b" /proc/device-tree/compatible; then
+    ln -sf /usr/share/kodi/system/settings/appliance.g12x.xml /var/share/kodi/system/settings/appliance.xml
+elif grep -q "g12a" /proc/device-tree/compatible; then
+    ln -sf /usr/share/kodi/system/settings/appliance.g12x.xml /var/share/kodi/system/settings/appliance.xml
+elif grep -q "Gxl" /proc/device-tree/compatible; then
+    ln -sf /usr/share/kodi/system/settings/appliance.gxx.xml /var/share/kodi/system/settings/appliance.xml
+elif grep -q "Gxm" /proc/device-tree/compatible; then
+    ln -sf /usr/share/kodi/system/settings/appliance.gxx.xml /var/share/kodi/system/settings/appliance.xml
+elif grep -q "Gxbb" /proc/device-tree/compatible; then
+    ln -sf /usr/share/kodi/system/settings/appliance.gxx.xml /var/share/kodi/system/settings/appliance.xml
+fi
+
+
 # common setup guisettings
 if [ ! -f $KODI_ROOT/userdata/guisettings.xml ] ; then
   if [ -f /usr/share/kodi/config/guisettings.xml ]; then
