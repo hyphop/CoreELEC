@@ -1,6 +1,7 @@
 defenv
 setenv bootfromnand 0
 setenv upgrade_step 2
+setenv hdmimode
 setenv sddtb 'if fatload mmc 0 ${dtb_mem_addr} dtb.img; then else store dtb read $dtb_mem_addr; fi'
 setenv usbdtb 'if fatload usb 0 ${dtb_mem_addr} dtb.img; then else store dtb read $dtb_mem_addr; fi'
 setenv cfgloadmmc 'setenv i; for i in 0 1 2; do if fatload mmc ${i}:1 ${loadaddr} cfgload; then autoscr ${loadaddr}; fi; done'
