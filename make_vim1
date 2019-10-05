@@ -1,0 +1,5 @@
+#!/bin/sh
+
+## hyphop ##
+
+PROJECT=Amlogic ARCH=arm make image
