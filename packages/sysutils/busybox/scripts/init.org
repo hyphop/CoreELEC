@@ -1214,16 +1214,6 @@ elif [ -f /sysroot/storage/.rpi_flash_firmware ]; then
   INIT_UNIT="--unit=rpi-flash-firmware.target"
 fi
 
-## extra scripts
-
-  for s in /sysroot/flash/scripts/*.script; do
-    [ -f "$s" ] && {
-    INIT_UNIT="--unit=installer.target"
-    continue
-    }
-  done
-
-
 # stop output redirection
 [ -n "$TEE_PID" ] && kill $TEE_PID &>/dev/null
 if [ -s /sysroot/dev/init.log ]; then

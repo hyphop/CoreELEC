@@ -1,29 +1,5 @@
 #!/bin/sh
 
-## hyphop ##
-
-### CUSTOM BLOCK
-
-SD=
-MMC=
-
-for m in /sys/class/mmc_host/emmc/*/block/mmcblk?; do
-    t=/dev/${m##*/}
-    [ -b "$t" ] && MMC="$t"
-done
-
-for m in /sys/class/mmc_host/sd/*/block/mmcblk?; do
-    t=/dev/${m##*/}
-    [ -b "$t" ] && SD="$t"
-done
-
-#echo "[i] MMC $MMC SD $SD"
-
-# update MMC
-
-fdisk=fdisk
-echo -e "w\nq\n" |  $fdisk $MMC >/dev/null 2>&1
-
 # SPDX-License-Identifier: GPL-2.0
 # Copyright (C) 2017-2018 Team LibreELEC (https://libreelec.tv)
 # Copyright (C) 2018-present Team CoreELEC (https://coreelec.org)

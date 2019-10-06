@@ -1,0 +1,4 @@
+#!/bin/sh
+
+./make_rebuild busybox initramfs linux image
+

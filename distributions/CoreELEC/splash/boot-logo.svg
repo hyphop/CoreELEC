@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1920"
+   height="1080"
+   viewBox="0 0 507.99999 285.75001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="coreelec.svg">
+  <title
+     id="title1150">coreelec</title>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.40747082"
+     inkscape:cx="1314.5264"
+     inkscape:cy="363.76382"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>coreelec</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>hyphop</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>##hyphop##</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>##hyphop##</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>##hyphop##</dc:identifier>
+        <dc:description>coreelec</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>coreelec</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>coreelec</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-11.249983)">
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.26458332"
+       id="rect1049"
+       width="508"
+       height="285.75"
+       x="0"
+       y="11.249983" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.26458332"
+       id="rect1051"
+       width="1.0843316"
+       height="4.3373265"
+       x="-754.69482"
+       y="177.72351" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="coreelec-logo">
+    <g
+       id="g1047"
+       transform="matrix(0.44502157,0,0,0.44502157,158.77379,-37.792032)">
+      <g
+         id="g1081"
+         transform="translate(-22.261186,259.21909)">
+        <g
+           id="g1112">
+          <path
+             sodipodi:open="true"
+             d="m 165.94615,103.98328 a 83.308861,83.308861 0 0 1 92.51645,-24.65995 83.308861,83.308861 0 0 1 54.60955,78.64606 83.308861,83.308861 0 0 1 -55.43013,78.06989 83.308861,83.308861 0 0 1 -92.25314,-25.62741"
+             sodipodi:end="2.4539329"
+             sodipodi:start="3.8397244"
+             sodipodi:ry="83.308861"
+             sodipodi:rx="83.308861"
+             sodipodi:cy="157.53319"
+             sodipodi:cx="229.76443"
+             sodipodi:type="arc"
+             id="path1012"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0707;stroke-width:22.47082091;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.85490196" />
+          <path
+             transform="rotate(90)"
+             sodipodi:open="true"
+             d="m 123.47636,-258.32542 a 44.588581,44.588581 0 0 1 49.51667,-13.1985 44.588581,44.588581 0 0 1 29.22813,42.09296 44.588581,44.588581 0 0 1 -29.66732,41.78457 44.588581,44.588581 0 0 1 -49.37574,-13.7163"
+             sodipodi:end="2.4539329"
+             sodipodi:start="3.8397244"
+             sodipodi:ry="44.588581"
+             sodipodi:rx="44.588581"
+             sodipodi:cy="-229.66443"
+             sodipodi:cx="157.63319"
+             sodipodi:type="arc"
+             id="path1012-6"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#fcf3f3;stroke-width:15.72957463;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98067627" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path1042"
+             d="m 229.74641,171.59668 0.38338,-57.88874"
+             style="fill:none;stroke:#fcf3f3;stroke-width:16.36499977;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98067627" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g1047-6"
+       transform="matrix(-0.44502157,0,0,-0.44502157,510.79944,397.47904)">
+      <g
+         id="g1081-2"
+         transform="translate(-22.261186,259.21909)">
+        <g
+           id="g1112-9" />
+      </g>
+    </g>
+  </g>
+</svg>

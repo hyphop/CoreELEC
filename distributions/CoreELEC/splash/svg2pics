@@ -1,0 +1,20 @@
+#!/bin/sh
+
+## hyphop ##
+
+# svg 2 pics converter
+
+
+CMD(){
+    echo "[#] $@">&2
+    "$@"
+
+}
+for s in "$@"; do
+
+    o=${s%.*}
+
+    CMD inkscape -e "$o.png" -b white "$s"
+    convert "$s" -quality 95 "$o.bmp"
+
+done

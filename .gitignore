@@ -2,6 +2,8 @@
 /build.*/
 /.fakeroot.*
 
+/*.patch
+
 # automatically downloaded source files
 /sources/
 /.stamps/

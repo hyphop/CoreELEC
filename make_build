@@ -1,0 +1,6 @@
+#!/bin/sh
+
+## hyphop ##
+
+
+PROJECT=Amlogic ARCH=arm ./scripts/build "$@"

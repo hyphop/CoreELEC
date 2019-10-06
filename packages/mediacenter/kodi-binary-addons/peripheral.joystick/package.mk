@@ -18,3 +18,7 @@ PKG_BUILD_FLAGS="+lto"
 
 PKG_IS_ADDON="embedded"
 PKG_ADDON_TYPE="kodi.peripheral"
+
+post_makeinstall_target() {
+    cp -a $PKG_DIR/files/* $INSTALL
+}

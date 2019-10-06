@@ -1,0 +1,22 @@
+--- linux-79b5701/arch/arm64/boot/dts/kvim.dts	2017-12-27 22:39:07.000000000 +0300
++++ linux-9999999/arch/arm64/boot/dts/kvim.dts	2019-09-26 06:31:43.435150185 +0300
+@@ -27,7 +27,7 @@
+ #include "amlogic/mesongxl.dtsi"
+ / {
+ 	model = "Amlogic";
+-	amlogic-dt-id = "gxl_p212_2g";
++	amlogic-dt-id = "VIM1";
+ 	compatible = "amlogic, Gxbb";
+ 	interrupt-parent = <&gic>;
+ 	#address-cells = <2>;
+@@ -1218,3 +1218,10 @@
+ &defendkey {
+ 	status = "okay";
+ };
++
++// mcu // fan
++
++&i2c_b {
++	status = "okay";
++};
++

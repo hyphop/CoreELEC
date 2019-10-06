@@ -27,9 +27,13 @@ post_install() {
       ln -sfn /usr/lib $BUILD/initramfs/usr/lib64
     fi
 
-    ln -sfn /usr/lib $BUILD/initramfs/lib
-    ln -sfn /usr/bin $BUILD/initramfs/bin
-    ln -sfn /usr/sbin $BUILD/initramfs/sbin
+#    ln -sfn /usr/lib $BUILD/initramfs/lib
+#    ln -sfn /usr/bin $BUILD/initramfs/bin
+#    ln -sfn /usr/sbin $BUILD/initramfs/sbin
+
+    ln -sfn ./usr/lib $BUILD/initramfs/lib
+    ln -sfn ./usr/bin $BUILD/initramfs/bin
+    ln -sfn ./usr/sbin $BUILD/initramfs/sbin
 
     mkdir -p $BUILD/image/
     fakeroot -- sh -c \

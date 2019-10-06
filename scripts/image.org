@@ -224,62 +224,6 @@ rm -rf ${TARGET_IMG}/${IMAGE_NAME}.kernel
 cp -PR ${BUILD}/linux-$(kernel_version)/arch/${TARGET_KERNEL_ARCH}/boot/${KERNEL_TARGET} ${TARGET_IMG}/${IMAGE_NAME}.kernel
 chmod 0644 ${TARGET_IMG}/${IMAGE_NAME}.kernel
 
-## hyphop
-
-#  cp ${BUILD}/linux-$(kernel_version)/arch/${TARGET_KERNEL_ARCH}/boot/dts/*.dtb $TARGET_IMG
-
-#  cp ${BUILD}/linux-$(kernel_version)/arch/${TARGET_KERNEL_ARCH}/boot/dts/amlogic/*vim*.dtb $TARGET_IMG
-
-  gzip -c ${BUILD}/linux-$(kernel_version)/arch/${TARGET_KERNEL_ARCH}/boot/Image > $TARGET_IMG/Image.gzip
-  lzma -c ${BUILD}/linux-$(kernel_version)/arch/${TARGET_KERNEL_ARCH}/boot/Image > $TARGET_IMG/Image.lzma
-
-
- CMD(){
-    echo "[i] $@"
-    $@
- }
-
-# CMD
-
-  $(which mkimage) -A $TARGET_KERNEL_ARCH \
-    -O linux -C gzip -T kernel -a 0x01080000 -e 0x01080000 \
-    -n kernel -d $TARGET_IMG/Image.gzip $TARGET_IMG/uImage.gzip
-
-  $(which mkimage) -A $TARGET_KERNEL_ARCH \
-    -O linux -C lzma -T kernel -a 0x01080000 -e 0x01080000 \
-    -n kernel -d $TARGET_IMG/Image.lzma $TARGET_IMG/uImage.lzma
-
-  cp  $BUILD/image/initramfs.cpio  $TARGET_IMG/initramfs.cpio
-
-
-  $(which mkimage) -A $TARGET_KERNEL_ARCH \
-    -O linux \
-    -T ramdisk \
-    -C none \
-    -a 0x00000000 \
-    -e 0x00000000 \
-    -n uInitrd \
-    -d $TARGET_IMG/initramfs.cpio $TARGET_IMG/uInitrd
-
-#  for c in lzma lzop gzip; do
-  for c in lzma ; do
-
-  $c -c $BUILD/image/initramfs.cpio > $TARGET_IMG/initramfs.cpio.$c
-
-  $(which mkimage) -A $TARGET_KERNEL_ARCH \
-    -O linux \
-    -T ramdisk \
-    -C none \
-    -a 0x00000000 \
-    -e 0x00000000 \
-    -n uInitrd \
-    -d $TARGET_IMG/initramfs.cpio.$c $TARGET_IMG/uInitrd.$c
-
-  done
-
-
-#########
-
 # Set mksquashfs options for each compression method
 if [ -z "${SQUASHFS_COMPRESSION_OPTION}" ]; then
   if [ "${SQUASHFS_COMPRESSION:-gzip}" = "gzip" ]; then
@@ -301,8 +245,6 @@ rm -rf ${FAKEROOT_SCRIPT}
 
 # Set permissions
 chmod 0644 ${TARGET_IMG}/${IMAGE_NAME}.system
-
-exit 0
 
 if [ "${1}" = "release" -o "${1}" = "mkimage" -o "${1}" = "noobs" ]; then
 
